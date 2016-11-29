@@ -1,0 +1,18 @@
+/* Minimal reset that keeps insepector output clean */
+
+/* stylelint-disable selector-no-universal, selector-no-type */
+*,
+*::before,
+*::after {
+  border: 0;
+  box-shadow: 0 0 0;
+  box-sizing: inherit;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+/* stylelint-enable */

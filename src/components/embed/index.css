@@ -1,0 +1,68 @@
+/** @define Embed */
+
+/**
+ * For use with media embeds – such as videos, slideshows, or images –
+ * that need to retain a specific aspect ratio but adapt to the width of their
+ * containing element. It also mitigates repainting when media embeds load.
+ *
+ * Default is 1:1 (square).
+ *
+ * Based on: http://alistapart.com/article/creating-intrinsic-ratios-for-video
+ */
+
+.Embed {
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+  }
+}
+
+.Embed-item {
+  border: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  /* stylelint-disable plugin/selector-bem-pattern, selector-no-type, selector-no-universal */
+  & * {
+    height: 100%;
+    width: 100%;
+  }
+
+  & img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/**
+ * Modifier: 16:9 aspect ratio
+ */
+
+.Embed--16by9 {
+  &::before {
+    padding-bottom: 56.25%;
+  }
+}
+
+/**
+ * Modifier: 2:1 aspect ratio
+ *
+ * Main category image shape
+ */
+
+.Embed--2by1 {
+  &::before {
+    padding-bottom: 50%;
+  }
+}

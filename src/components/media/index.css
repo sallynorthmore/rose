@@ -1,0 +1,58 @@
+/** @define Media */
+
+.Media-caption {
+  margin: 10px 0 0;
+}
+
+.Media-captionTitle {
+  font: 600 14px/16px var(--galano);
+  text-transform: uppercase;
+}
+
+.Media-captionBody {
+  font: 600 10px/12px var(--galano);
+  text-transform: uppercase;
+}
+
+/**
+ * Modifier: landscape
+ *
+ * Displays caption inline with media
+ * on larger breakpoints
+ */
+
+.Media--landscape {
+  & .Media-caption {
+    max-width: 260px;
+  }
+
+  & .Media-captionBody {
+    font: 500 11px/15px var(--galano);
+    text-transform: none;
+  }
+}
+
+@media (--medium) {
+  .Media-caption {
+    max-width: 260px;
+  }
+
+  .Media--landscape {
+    display: flex;
+    flex-direction: row;
+
+    & .Media-embed,
+    & .Media-caption {
+      flex: 0 0 50%;
+    }
+
+    & .Media-caption {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    & .Media-captionBody {
+      margin-top: 10px;
+    }
+  }
+}

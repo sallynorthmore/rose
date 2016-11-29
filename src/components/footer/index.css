@@ -1,0 +1,18 @@
+/** @define Footer */
+
+.Footer {
+  margin: 0 auto;
+  position: relative;
+}
+
+/**
+ * Viewport: medium
+ */
+
+@media (--medium) {}
+
+/**
+ * Viewport: large
+ */
+
+@media (--large) {}

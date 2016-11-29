@@ -1,0 +1,28 @@
+/*
+Theme Name: rosepilkington
+Theme URI: https://rosepilkington.com
+Author: Sally Northmore
+Author URI: https://sallynorthmore.com
+Description: A portfolio web site
+*/
+
+/* Base */
+@import "base/font-faces.css";
+@import "base/reset.css";
+@import "base/variables.css";
+
+/* Components */
+@import "components/breadcrumbs/index.css";
+@import "components/button/index.css";
+@import "components/embed/index.css";
+@import "components/footer/index.css";
+@import "components/form/index.css";
+@import "components/grid/index.css";
+@import "components/header/index.css";
+@import "components/media/index.css";
+@import "components/navigation/index.css";
+@import "components/page/index.css";
+@import "components/pagination/index.css";
+@import "components/social/index.css";
+
+/* Third Party */

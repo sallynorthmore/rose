@@ -1,0 +1,52 @@
+/** @define Pagination */
+
+.Pagination {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+}
+
+.Pagination-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Pagination-item {
+  color: black;
+  font: 700 14px/14px var(--galano);
+  letter-spacing: 2px;
+  text-align: right;
+  width: 60px;
+}
+
+.Pagination-link {
+  color: black;
+  text-decoration: none;
+
+  &:hover,
+  &.is-active {
+    color: gray(188);
+    text-decoration: underline;
+  }
+}
+
+.Pagination-nav {
+  color: black;
+  cursor: pointer;
+  display: block;
+  font: 400 30px/14px var(--galano);
+  text-align: center;
+  text-decoration: none;
+  width: 60px;
+
+  &:hover,
+  &.is-active {
+    color: gray(188);
+    text-decoration: none;
+  }
+}
+
+.Pagination-nav--previous {
+  text-align: right;
+}

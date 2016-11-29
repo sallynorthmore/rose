@@ -1,0 +1,87 @@
+/** @define Page */
+
+.Page {
+  background: white;
+  min-height: 100vh;
+  padding: 20px 10px;
+  position: relative;
+
+  &::after {
+    background: yellow;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.5s;
+    width: 0;
+    z-index: var(--depth-3);
+  }
+}
+
+.Page-headerInner {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+.Page-breadcrumbs {
+  margin-top: 10px;
+}
+
+.Page-breadcrumbsInner {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+.Page-main {
+  display: block;
+  flex: 1;
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+.Page-title {
+  color: black;
+  font: 700 18px/18px var(--galano);
+  letter-spacing: 1px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.Page-connect {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+
+  &::before {
+    background: gray(238);
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    margin-top: -30px;
+    position: absolute;
+    width: 100%;
+    z-index: var(--depth-1);
+  }
+}
+
+.Page-subscribe {
+  margin-top: 70px;
+}
+
+.Page-social {
+  margin-top: 45px;
+}
+
+.Page-footer {
+  margin: 60px auto 0;
+  max-width: 940px;
+  width: 100%;
+}

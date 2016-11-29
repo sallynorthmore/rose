@@ -1,0 +1,59 @@
+/** @define Breadcrumbs */
+
+.Breadcrumbs {
+  align-items: baseline;
+  display: flex;
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+.Breadcrumbs-item {
+  &:not(:last-child) {
+    margin-right: 4px;
+    padding-right: 9px;
+    position: relative;
+
+    &::after {
+      color: gray(188);
+      content: "›";
+      position: absolute;
+      right: 0;
+      top: 1px;
+    }
+  }
+
+  /* Required for text-overflow */
+  &:last-child {
+    max-width: 40%;
+
+    & span { /* stylelint-disable selector-no-type */
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.Breadcrumbs-itemInner {
+  color: gray(188);
+  font: 500 10px/10px var(--galano);
+
+  &:visited {
+    color: gray(188);
+  }
+}
+
+.Breadcrumbs-itemInner--link {
+  text-decoration: none;
+
+  &:visited {
+    color: gray(188);
+  }
+
+  &:hover,
+  &.is-active {
+    text-decoration: underline;
+  }
+}

@@ -42,5 +42,22 @@
 		<?php if ( is_front_page() || is_home() ) : ?>
 
 		<?php else : ?>
-			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?> yah</a></p>
+			<header class="Header">
+				<h2 class="Header-title">
+					<a class="Header-titleInner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</h2>
+				<nav class="Header-nav">
+					<ul class="Header-items">
+						<li class="Header-item">
+							<a href="/about" class="Header-link">About</a>
+						</li>
+						<li class="Header-item">
+							<a href="/contact" class="Header-link">Contact</a>
+						</li>
+						<li class="Header-item">
+							<a href="/work" class="Header-link">Work</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
 		<?php endif; ?>

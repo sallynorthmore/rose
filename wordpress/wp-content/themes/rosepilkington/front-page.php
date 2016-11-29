@@ -20,8 +20,8 @@
 					<source src="<?php bloginfo('template_directory');?>/web/assets/home.mp4"
 					type="video/mp4"/> -->
 
-				<!-- <source src="<?php bloginfo('template_directory');?>/web/assets/home-mobile.webm"
-					type='video/webm;codecs="vp8, vorbis"'/> -->
+				<source src="<?php bloginfo('template_directory');?>/web/assets/home-mobile.webm"
+					type='video/webm;codecs="vp8, vorbis"'/>
 						<!--
 					<source src="<?php bloginfo('template_directory');?>/web/assets/home.mp4"
 					type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/> -->

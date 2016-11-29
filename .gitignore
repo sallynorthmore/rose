@@ -26,3 +26,8 @@ wordpress/sitemap.xml.gz
 # NPM Modules
 
 node_modules/*
+
+
+# Reference
+
+ref/*

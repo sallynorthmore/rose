@@ -4,6 +4,8 @@
   background: gray(188);
   height: 100%;
   left: 0;
+  min-height: 100vh;
+  min-width: 100%;
   position: absolute;
   top: 0;
   width: 100%;
@@ -73,7 +75,7 @@
 
 @media (--large) {
   .Homepage-titleInner {
-    font: 600 50px/50px var(--sans);
+    font: 600 56px/56px var(--sans);
   }
 }
 

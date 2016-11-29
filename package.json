@@ -13,7 +13,7 @@
     "build:js": "babel src/ --out-dir wordpress/wp-content/themes/rosepilkington/web/js",
     "build": "run-p build:*",
     "watch:css": "postcss -c .postcssrc.json -w --poll",
-    "watch:js": "babel src/ --watch --out-dir web/js --source-maps inline",
+    "watch:js": "babel src/ --watch --out-dir wordpress/wp-content/themes/rosepilkington/web/js --source-maps inline",
     "watch": "run-p watch:*",
     "wiredep": "wiredep -s src/app.css",
     "serve": "browser-sync start --config '.browsersyncrc.json'",

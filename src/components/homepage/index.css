@@ -1,0 +1,84 @@
+/** @define Homepage */
+
+.Homepage {
+  background: gray(188);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.Homepage-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: var(--depth-2);
+}
+
+.Homepage-header {
+  margin: auto;
+  text-align: center;
+}
+
+.Homepage-titleInner {
+  color: white;
+  font: 600 32px/32px var(--sans);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.Homepage-nav {
+  display: none;
+  margin-top: 15px;
+}
+
+.Homepage-media {
+  background: url("web/assets/home.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: var(--depth-1);
+}
+
+.Homepage-image {
+  display: none;
+}
+
+.Homepage-video {
+  opacity: 0.6;
+}
+
+@media (--medium) {
+  .Homepage-titleInner {
+    font: 600 48px/48px var(--sans);
+  }
+}
+
+@media (--large) {
+  .Homepage-titleInner {
+    font: 600 50px/50px var(--sans);
+  }
+}
+
+@media (--xlarge) {
+  .Homepage-titleInner {
+    font: 600 72px/72px var(--sans);
+  }
+}

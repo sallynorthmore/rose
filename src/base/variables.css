@@ -1,7 +1,6 @@
 /* Only non-named-colour palette, z-index and font-stacks */
 :root {
-  --galano: "Galano Grotesque Web", sans-serif;
-  --galano-alt: "Galano Grotesque Alt Web", serif;
+  --sans: "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
 
   /* z-index */
   --depth-1: 100;
@@ -14,3 +13,4 @@
 /* Common breakpoints. However adaptions can happen at component-level */
 @custom-media --medium (min-width: 600px);
 @custom-media --large (min-width: 860px);
+@custom-media --xlarge (min-width: 1440px);

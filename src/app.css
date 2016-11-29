@@ -12,6 +12,9 @@ Description: A portfolio web site
 @import "base/variables.css";
 
 /* Components */
+@import "components/homepage/index.css";
+
+/*
 @import "components/breadcrumbs/index.css";
 @import "components/button/index.css";
 @import "components/embed/index.css";
@@ -24,5 +27,6 @@ Description: A portfolio web site
 @import "components/page/index.css";
 @import "components/pagination/index.css";
 @import "components/social/index.css";
+ */
 
 /* Third Party */

@@ -1,0 +1,86 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "ignoreFiles": ["src/third-party/*.css"],
+  "rules": {
+    "at-rule-whitelist": [
+      "custom-media",
+      "font-face",
+      "import",
+      "keyframes",
+      "media",
+      "nest"
+    ],
+    "at-rule-no-vendor-prefix": true,
+    "color-named": "always-where-possible",
+    "color-no-hex": true,
+    "custom-media-pattern": "^([a-z]+-?)*([a-z]+)$",
+    "custom-property-no-outside-root": true,
+    "declaration-block-properties-order": "alphabetical",
+    "declaration-no-important": true,
+    "font-family-name-quotes": "always-where-recommended",
+    "font-weight-notation": "numeric",
+    "function-url-quotes": "always",
+    "function-whitelist": [
+      "alpha",
+      "calc",
+      "color",
+      "cubic-bezier",
+      "format",
+      "gray",
+      "grayscale",
+      "lightness",
+      "linear-gradient",
+      "rgb",
+      "rgba",
+      "rotate",
+      "svg-load",
+      "translate",
+      "translate3d",
+      "scale",
+      "scale3d",
+      "skew",
+      "url",
+      "var"
+    ],
+    "media-feature-name-no-vendor-prefix": true,
+    "no-descending-specificity": true,
+    "no-duplicate-selectors": true,
+    "plugin/selector-bem-pattern": {
+      "preset": "suit"
+    },
+    "property-no-vendor-prefix": true,
+    "root-no-standard-properties": true,
+    "selector-max-specificity": "0,2,1",
+    "selector-nested-pattern": "^&",
+    "selector-no-attribute": true,
+    "selector-no-id": true,
+    "selector-no-type": true,
+    "selector-no-universal": true,
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-class-whitelist": [
+      "active",
+      "disabled",
+      "first-child",
+      "focus",
+      "hover",
+      "nth-child",
+      "last-child",
+      "not",
+      "root",
+      "visited"
+    ],
+    "selector-root-no-composition": true,
+    "string-quotes": "double",
+    "unit-whitelist": [
+      "%",
+      "deg",
+      "px",
+      "s",
+      "vh"
+    ],
+    "value-no-vendor-prefix": true
+  }
+}

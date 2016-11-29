@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "amd": true,
+    "jquery" : true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "import/no-amd": 0,
+    "no-define": 0,
+    "no-console": 0
+  }
+}

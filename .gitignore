@@ -1,3 +1,5 @@
+# WordPress
+
 *.log
 wordpress/wp-config.php
 wordpress/wp-content/index.php
@@ -10,15 +12,17 @@ wordpress/wp-content/upgrade/
 wordpress/wp-content/uploads/
 wordpress/wp-content/wp-cache-config.php
 wordpress/wp-content/plugins/hello.php
-
 wordpress/wp-includes/
-
 wordpress/wp-admin/
 
+wordpress/*.php
 wordpress/.htaccess
 wordpress/license.txt
 wordpress/readme.html
 wordpress/sitemap.xml
 wordpress/sitemap.xml.gz
 
-wordpress/*.php
+
+# NPM Modules
+
+node_modules/*

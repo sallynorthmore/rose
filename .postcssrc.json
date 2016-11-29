@@ -1,0 +1,20 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-nesting",
+    "postcss-custom-properties",
+    "postcss-custom-media",
+    "postcss-color-function",
+    "postcss-color-gray",
+    "postcss-calc",
+    "postcss-inline-svg",
+    "autoprefixer"
+  ],
+  "autoprefixer": {
+    "browsers": "iOS 7, last 2 versions"
+  },
+  "map": false,
+  "input": "src/app.css",
+  "output": "wordpress/wp-content/themes/rosepilkington/style.css",
+  "local-plugins": true
+}

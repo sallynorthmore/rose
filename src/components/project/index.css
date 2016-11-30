@@ -10,14 +10,14 @@
 .Project-button {}
 
 .Project-client {
-  font: 400 18px/18px var(--sans);
+  font: 400 16px/16px var(--sans);
   margin: 10px 0 0;
 }
 
 .Project-title {
   font: 600 18px/18px var(--sans);
   margin: 5px 0 0;
-  padding-left: 55px;
+  padding-left: 50px;
 }
 
 .Project-content {
@@ -25,9 +25,9 @@
   margin: 5px 0 0;
 
   & > p {
-    font: 400 18px/18px var(--sans);
+    font: 400 16px/16px var(--sans);
     margin: 10px 0 0;
-    padding-left: 55px;
+    padding-left: 50px;
   }
 
   & > p:first-child {
@@ -36,53 +36,114 @@
 
   & > iframe,
   & > p > iframe {
-    margin-left: -55px;
+    margin-left: -50px;
     max-width: 100%;
-    min-width: 354px;
+    min-width: 300px;
     position: relative;
   }
 }
 
+@media (min-width: 370px) {
+  .Project-content {
+    & > iframe,
+    & > p > iframe {
+      min-width: 350px;
+    }
+  }
+}
+
+@media (min-width: 100px) {
+  .Project-content {
+    & > iframe,
+    & > p > iframe {
+      min-width: 390px;
+    }
+  }
+}
+
 @media (--medium) {
+  .Project {
+    text-align: center;
+  }
+
+  .Project-inner {
+    margin: 0 auto;
+    max-width: 628px;
+    padding: 20px 70px;
+    text-align: left;
+  }
+
   .Project-client {
-    font: 400 36px/36px var(--sans);
-    margin: 190px 0 0 -80px;
-    padding-left: 280px;
+    font: 400 24px/24px var(--sans);
+    margin-top: 0;
+    max-width: 420px;
+    padding-left: 50px;
   }
 
   .Project-title {
-    font: 600 36px/36px var(--sans);
-    margin: 60px 0 0;
-    padding-left: 280px;
+    font: 600 24px/24px var(--sans);
+    margin: 0;
+    max-width: 420px;
+    padding-left: 125px;
   }
 
   .Project-content {
-    font: 400 36px/36px var(--sans);
-    margin: 60px 0 0;
-    padding-left: 280px;
+    font: 400 24px/24px var(--sans);
+
+    & > p {
+      font: 400 16px/16px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
+      margin: 10px 0 0;
+      max-width: 420px;
+      padding-left: 125px;
+    }
+
+    & > p > iframe {
+      display: block;
+      margin-top: 50px;
+      margin-left: -125px;
+      min-width: 600px;
+      width: 100% !important;
+    }
+  }
+}
+
+@media (min-width: 765px) {
+  .Project-inner {
+    max-width: none;
   }
 
+  .Project-content {
+
+    & > p > iframe {
+      min-width: 700px;
+    }
+  }
 }
 
 @media (--large) {
   .Project-client {
     font: 400 36px/36px var(--sans);
-    margin: 190px 0 0 -80px;
-    padding-left: 280px;
+    max-width: 520px;
+    /*margin: 190px 0 0 -80px;
+    padding-left: 280px;*/
   }
 
   .Project-title {
     font: 600 36px/36px var(--sans);
-    margin: 60px 0 0;
-    padding-left: 280px;
+    max-width: 520px;
+    /*margin: 60px 0 0;
+    padding-left: 280px;*/
   }
 
   .Project-content {
     font: 400 36px/36px var(--sans);
-    margin: 60px 0 0;
-    padding-left: 280px;
-  }
+    /*margin: 60px 0 0;
+    padding-left: 280px;*/
 
+    & > p {
+      max-width: 520px;
+    }
+  }
 }
 
 @media (--xlarge) {}

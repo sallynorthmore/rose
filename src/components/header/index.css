@@ -50,11 +50,15 @@
 }
 
 @media (--medium) {
+  .Header-inner {
+    padding: 35px 70px 0;
+  }
+
   .Header-titleInner {
-    font: 400 22px/22px var(--sans);
+    font: 400 16px/16px var(--sans);
   }
 
   .Header-link {
-    font: 400 22px/22px var(--sans);
+    font: 400 16px/16px var(--sans);
   }
 }

@@ -1,9 +1,12 @@
 /** @define Header */
 
-.Header {
+.Header {}
+
+.Header-inner {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .Header-title {

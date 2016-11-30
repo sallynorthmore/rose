@@ -46,7 +46,9 @@ Description: A portfolio web site
 
 /** @define Header */
 
-.Header {
+.Header {}
+
+.Header-inner {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -56,6 +58,7 @@ Description: A portfolio web site
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px;
 }
 
 .Header-title {
@@ -222,7 +225,7 @@ Description: A portfolio web site
 
 .Project-client {
   font: 400 18px/18px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
 }
 
 .Project-title {
@@ -678,3 +681,49 @@ Description: A portfolio web site
 @keyframes overlay-slide-out-right{0%{width:0}to{width:100%}}
 
 .overlay-slide-out-right{right:0;width:100%;-webkit-animation-name:overlay-slide-out-right;animation-name:overlay-slide-out-right}
+
+/** @define gallery
+
+  Wordpress Override CSS
+ */
+
+.gallery,
+.gallery-columns-2 {
+  border-width: 0
+}
+
+.gallery > br, .gallery-columns-2 > br {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.gallery-item {
+  float: none !important;
+  margin-top: 10px !important;
+  max-width: 100% !important;
+  text-align: center !important;
+  width: 100% !important;
+  border-width: 0;
+}
+
+.gallery-icon {
+  border-width: 0;
+  float: none;
+  max-width: 100%;
+  position: static;
+  width: 100%
+}
+
+.gallery-icon > a {
+  border-width: 0;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.gallery-icon > a > img {
+  border-width: 0 !important;
+  max-width: 100%;
+  height: auto;
+}

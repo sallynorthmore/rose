@@ -44,21 +44,23 @@
 
 		<?php else : ?>
 			<header class="Header">
-				<h2 class="Header-title">
-					<a class="Header-titleInner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</h2>
-				<nav class="Header-nav">
-					<ul class="Header-items">
-						<li class="Header-item">
-							<a href="/about" class="Header-link">About</a>
-						</li>
-						<li class="Header-item">
-							<a href="/contact" class="Header-link">Contact</a>
-						</li>
-						<li class="Header-item">
-							<a href="/work" class="Header-link">Work</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="Header-inner">
+					<h2 class="Header-title">
+						<a class="Header-titleInner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</h2>
+					<nav class="Header-nav">
+						<ul class="Header-items">
+							<li class="Header-item">
+								<a href="/about" class="Header-link">About</a>
+							</li>
+							<li class="Header-item">
+								<a href="/contact" class="Header-link">Contact</a>
+							</li>
+							<li class="Header-item">
+								<a href="/work" class="Header-link">Work</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 		<?php endif; ?>

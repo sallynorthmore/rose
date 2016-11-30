@@ -41,8 +41,10 @@
 
   & > a > img {
     border-width: 0 !important;
+    display: block;
     height: auto !important;
     max-width: 100% !important;
+    min-width: 100%;
   }
 }
 
@@ -52,7 +54,7 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: -10px 0 0 -10px !important;
+    margin: 0 0 0 -10px !important;
 
     & .gallery-item {
       display: block;
@@ -61,10 +63,6 @@
       padding: 10px 0 0 10px;
       width: 50% !important;
       box-sizing: border-box;
-
-      & img {
-        display: block;
-      }
     }
   }
 }

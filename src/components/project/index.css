@@ -91,7 +91,7 @@
     font: 400 24px/24px var(--sans);
 
     & > p {
-      font: 400 16px/16px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
+      font: 400 24px/24px var(--sans);
       margin: 10px 0 0;
       max-width: 420px;
       padding-left: 125px;
@@ -123,14 +123,46 @@
 @media (--large) {
   .Project-client {
     font: 400 36px/36px var(--sans);
-    max-width: 520px;
+    max-width: 60%;
+    padding-left: 20%;
+
+    & .post-meta-key {
+      margin-left: -110px;
+    }
+  }
+
+  .Project-title {
+    font: 600 36px/36px var(--sans);
+    max-width: 60%;
+    padding-left: 20%;
+  }
+
+  .Project-content {
+    font: 400 36px/36px var(--sans);
+
+    & > p {
+      font: 400 36px/36px var(--sans);
+      max-width: 60%;
+      padding-left: 20%;
+    }
+
+    & > p > iframe {
+      margin-left: -20%;
+    }
+  }
+}
+
+@media (--xlarge) {
+  .Project-client {
+    font: 400 36px/36px var(--sans);
+    max-width: 680px;
     /*margin: 190px 0 0 -80px;
     padding-left: 280px;*/
   }
 
   .Project-title {
     font: 600 36px/36px var(--sans);
-    max-width: 520px;
+    max-width: 680px;
     /*margin: 60px 0 0;
     padding-left: 280px;*/
   }
@@ -141,9 +173,8 @@
     padding-left: 280px;*/
 
     & > p {
+      font: 400 36px/36px var(--sans);
       max-width: 520px;
     }
   }
 }
-
-@media (--xlarge) {}

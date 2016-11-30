@@ -280,7 +280,9 @@ Description: A portfolio web site
   margin: 0
 }
 
-.Project-content > p {
+.Project-content > p,
+  .Project-content > ul,
+  .Project-content > ol {
   font: 400 16px/16px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
   margin: 15px 0 0;
   padding-left: 50px;
@@ -288,6 +290,26 @@ Description: A portfolio web site
 
 .Project-content > p:first-child {
   margin-top: 0;
+}
+
+.Project-content ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.Project-content ol li {
+  list-style: upper-latin;
+  list-style-position: inside;
+}
+
+.Project-content a,
+  .Project-content a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+.Project-content a:hover, .Project-content a:visited:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -320,15 +342,13 @@ Description: A portfolio web site
     font: 400 24px/24px "Helvetica Neue Medium", Helvetica, Arial, sans-serif
   }
 
-  .Project-content > p {
+  .Project-content > p,
+    .Project-content > ul,
+    .Project-content > ol {
     font: 400 24px/24px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
     margin: 10px 0 0;
     max-width: 420px;
     padding-left: 125px;
-  }
-
-  .Project-video {
-    /*margin-left: -125px;*/
   }
 
   .Project-button {
@@ -362,15 +382,13 @@ Description: A portfolio web site
     font: 400 36px/36px "Helvetica Neue Medium", Helvetica, Arial, sans-serif
   }
 
-  .Project-content > p {
+  .Project-content > p,
+    .Project-content > ul,
+    .Project-content > ol {
     font: 400 36px/36px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
     max-width: 60%;
+    margin-top: 20px;
     padding-left: 20%;
-  }
-
-  .Project-video {
-    /*margin-left: 20%;
-    min-width: 100%;*/
   }
 }
 
@@ -389,7 +407,9 @@ Description: A portfolio web site
     font: 400 36px/36px "Helvetica Neue Medium", Helvetica, Arial, sans-serif
   }
 
-  .Project-content > p {
+  .Project-content > p,
+    .Project-content > ul,
+    .Project-content > ol {
     font: 400 36px/36px "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
     max-width: 800px;
   }

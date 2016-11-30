@@ -37,7 +37,9 @@
   font: 400 18px/18px var(--sans);
   margin: 0;
 
-  & > p {
+  & > p,
+  & > ul,
+  & > ol {
     font: 400 16px/16px var(--sans);
     margin: 15px 0 0;
     padding-left: 50px;
@@ -45,6 +47,26 @@
 
   & > p:first-child {
     margin-top: 0;
+  }
+
+  & ul li {
+    list-style: disc;
+    list-style-position: inside;
+  }
+
+  & ol li {
+    list-style: upper-latin;
+    list-style-position: inside;
+  }
+
+  & a,
+  & a:visited {
+    color: black;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -77,16 +99,14 @@
   .Project-content {
     font: 400 24px/24px var(--sans);
 
-    & > p {
+    & > p,
+    & > ul,
+    & > ol {
       font: 400 24px/24px var(--sans);
       margin: 10px 0 0;
       max-width: 420px;
       padding-left: 125px;
     }
-  }
-
-  .Project-video {
-    /*margin-left: -125px;*/
   }
 
   .Project-button {
@@ -120,16 +140,14 @@
   .Project-content {
     font: 400 36px/36px var(--sans);
 
-    & > p {
+    & > p,
+    & > ul,
+    & > ol {
       font: 400 36px/36px var(--sans);
       max-width: 60%;
+      margin-top: 20px;
       padding-left: 20%;
     }
-  }
-
-  .Project-video {
-    /*margin-left: 20%;
-    min-width: 100%;*/
   }
 }
 
@@ -147,7 +165,9 @@
   .Project-content {
     font: 400 36px/36px var(--sans);
 
-    & > p {
+    & > p,
+    & > ul,
+    & > ol {
       font: 400 36px/36px var(--sans);
       max-width: 800px;
     }

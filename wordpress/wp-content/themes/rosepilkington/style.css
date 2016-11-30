@@ -830,7 +830,16 @@ Description: A portfolio web site
   margin-top: 10px !important;
   max-width: 100% !important;
   text-align: center !important;
-  width: 100% !important;
+  width: 100% !important
+}
+
+.gallery-item a > img,
+  .gallery-item img {
+  border-width: 0 !important;
+  display: block;
+  height: auto !important;
+  max-width: 100% !important;
+  min-width: 100%;
 }
 
 .gallery-icon {
@@ -846,14 +855,6 @@ Description: A portfolio web site
   display: block;
   max-width: 100%;
   width: 100%;
-}
-
-.gallery-icon > a > img {
-  border-width: 0 !important;
-  display: block;
-  height: auto !important;
-  max-width: 100% !important;
-  min-width: 100%;
 }
 
 @media (min-width: 860px) {

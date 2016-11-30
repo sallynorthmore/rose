@@ -23,6 +23,15 @@
   max-width: 100% !important;
   text-align: center !important;
   width: 100% !important;
+
+  & a > img,
+  & img {
+    border-width: 0 !important;
+    display: block;
+    height: auto !important;
+    max-width: 100% !important;
+    min-width: 100%;
+  }
 }
 
 .gallery-icon {
@@ -37,14 +46,6 @@
     display: block;
     max-width: 100%;
     width: 100%;
-  }
-
-  & > a > img {
-    border-width: 0 !important;
-    display: block;
-    height: auto !important;
-    max-width: 100% !important;
-    min-width: 100%;
   }
 }
 

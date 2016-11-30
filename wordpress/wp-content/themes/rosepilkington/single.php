@@ -18,7 +18,7 @@
 
 		<div class="Project-button">
 			<div class="Close">
-				<a href="/archives/category/work" title="close" class="Close-inner">close</a>
+				<a href="/work" title="Close project" class="Close-inner">Close project</a>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,23 @@
+/** @define Close */
+
+.Close {
+  text-align: right;
+}
+
+.Close-inner {
+  background: no-repeat center;
+  background-image: svg-load(close.svg);
+  background-size: contain;
+  display: inline-block;
+  font-size: 0;
+  height: 40px;
+  text-indent: -1000px;
+  width: 40px;
+}
+
+@media (--large) {
+  .Close-inner {
+    height: 70px;
+    width: 70px;
+  }
+}

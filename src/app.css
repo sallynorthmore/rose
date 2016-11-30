@@ -12,6 +12,7 @@ Description: A portfolio web site
 @import "base/variables.css";
 
 /* Components */
+@import "components/close/index.css";
 @import "components/header/index.css";
 @import "components/homepage/index.css";
 @import "components/project/index.css";

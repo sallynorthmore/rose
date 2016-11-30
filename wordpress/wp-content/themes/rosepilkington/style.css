@@ -395,6 +395,82 @@ Description: A portfolio web site
   }
 }
 
+/** @define Work */
+
+.Work-items {
+  padding: 0;
+  list-style: none;
+  transition: all .1s ease-in;
+}
+
+.Work-item {
+  display: block;
+  margin-bottom: 20px;
+  min-width: 240px;
+}
+
+.Work-itemInner {
+  display: block
+  /*float: left;
+  position: relative;
+  width: 90%;
+  margin-left: 5%;*/
+}
+
+.Work-itemInner img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.Work-title {
+  font-family: "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-align: center;
+}
+
+.Work-link {
+  color: black;
+  text-decoration: none;
+}
+
+.Work-linkOverlay {
+  display: none;
+}
+
+.Work-linkInner {
+  color: black;
+  display: block;
+  padding: 8px 0 30px;
+}
+
+.Work-item--small {
+
+}
+
+.Work-item--medium {
+
+}
+
+@media (min-width: 600px) {
+  .Work-items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 20px 0 0 -20px;
+  }
+
+  .Work-item {
+    width: 33%;
+    padding: 20px 0 0 20px;
+  }
+}
+
 /*
 @import "components/breadcrumbs/index.css";
 @import "components/button/index.css";

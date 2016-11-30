@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.Homepage-tagline {
+  display: none;
+}
+
 .Homepage-inner {
   display: flex;
   flex-direction: column;

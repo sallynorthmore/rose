@@ -11,6 +11,12 @@
 				<h1 class="Homepage-title">
 					<a class="Homepage-titleInner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h1>
+				<?php
+					$description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) :
+				?>
+					<p class="Homepage-tagline site-description"><?php echo $description; ?></p>
+				<?php endif; ?>
 				<div class="Homepage-nav"></div>
 			</header>
 		</div>

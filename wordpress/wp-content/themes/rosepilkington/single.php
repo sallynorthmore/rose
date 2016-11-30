@@ -12,7 +12,7 @@
 			<?php the_title(); ?>
 		</h1>
 
-		<article id="post_<?php the_ID(); ?>" class="Project-content">
+		<article id="post_<?php the_ID(); ?>" class="Project-content" data-js="project">
 				<?php the_content(); ?>
 		</article>
 
@@ -25,3 +25,19 @@
 </section>
 <?php endwhile; ?>
 <?php endif; ?>
+<script>
+	$(document).ready(function() {
+		var $videos = $('[data-js="project"] iframe');
+		console.log("Number videos here " + $videos.length);
+
+		$videos.each(function(){
+			var $div = $("<div>", {id: "foo", "class": "Project-video"});
+			var video = $(this);
+			var wrapper = $(this).parent("p");
+
+			video.appendTo($div);
+			$div.insertAfter(wrapper);
+			// newDiv.after(wrapper);
+		});
+	});
+</script>

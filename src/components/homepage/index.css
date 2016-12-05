@@ -33,7 +33,7 @@
 
 .Homepage-titleInner {
   color: white;
-  font: 600 32px/32px var(--sans);
+  font: 600 32px/32px var(--plain);
   text-decoration: none;
   text-transform: uppercase;
 
@@ -77,18 +77,18 @@
 
 @media (--medium) {
   .Homepage-titleInner {
-    font: 600 48px/48px var(--sans);
+    font: 600 48px/48px var(--plain);
   }
 }
 
 @media (--large) {
   .Homepage-titleInner {
-    font: 600 56px/56px var(--sans);
+    font: 600 56px/56px var(--plain);
   }
 }
 
 @media (--xlarge) {
   .Homepage-titleInner {
-    font: 600 72px/72px var(--sans);
+    font: 600 72px/72px var(--plain);
   }
 }

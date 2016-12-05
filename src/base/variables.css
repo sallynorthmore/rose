@@ -1,6 +1,7 @@
 /* Only non-named-colour palette, z-index and font-stacks */
 :root {
-  --sans: "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
+  --sans: "Helvetica", Helvetica, sans-serif;
+  --plain: "PlainExtrabold";
 
   /* z-index */
   --depth-1: 100;

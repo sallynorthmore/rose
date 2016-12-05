@@ -28,3 +28,12 @@ get_header(); ?>
 		<?php endif; ?>
 	</ul>
 </section>
+<script>
+	$(document).ready(function(){
+		var classes = ["Work-item--small", "Work-item--medium", "none"];
+			$(".Work-item").each(function(){
+				console.log(classes[~~(Math.random()*classes.length)]);
+					$(this).addClass(classes[~~(Math.random()*classes.length)]);
+			});
+	});
+</script>

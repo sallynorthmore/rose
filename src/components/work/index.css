@@ -1,9 +1,9 @@
 /** @define Work */
 
 .Work-items {
-  padding: 0;
   list-style: none;
-  transition: all .1s ease-in;
+  padding: 0;
+  transition: all 0.1s ease-in;
 }
 
 .Work-item {
@@ -14,12 +14,12 @@
 
 .Work-itemInner {
   display: block;
-  /*float: left;
+  float: left;
+  margin-left: 5%;
   position: relative;
   width: 90%;
-  margin-left: 5%;*/
 
-  & img {
+  & img {  /* stylelint-disable-line*/
     display: block;
     height: auto;
     width: 100%;
@@ -29,7 +29,7 @@
 .Work-title {
   font-family: var(--sans);
   font-size: 22px;
-  letter-spacing: 0.06em;
+  letter-spacing: .06em; /* stylelint-disable-line*/
   margin: 0;
   text-align: center;
 }
@@ -49,23 +49,91 @@
   padding: 8px 0 30px;
 }
 
-.Work-item--small {
-
-}
-
-.Work-item--medium {
-
-}
-
 @media (--medium) {
   .Work-items {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0 0 -20px;
+
+    /* Styling for every middle element here. */
+    & li:nth-child(3n+2) { /* stylelint-disable-line*/
+      & div { /* stylelint-disable-line*/
+        float: none;
+        margin: auto;
+      }
+    }
+
+    /* Styling for every third element here. */
+    & li:nth-child(3n) { /* stylelint-disable-line*/
+      & div { /* stylelint-disable-line*/
+        float: right;
+      }
+    }
   }
 
   .Work-item {
-    width: 33%;
-    padding: 20px 0 0 20px;
+    flex: none;
+    max-width: none;
+    width: 33.3333% !important; /* stylelint-disable-line*/
+  }
+
+  .Work-itemInner {
+    float: left;
+    margin-left: 0;
+    width: 95%;
+  }
+
+  .Work-title {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+  }
+
+  .Work-link {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .Work-linkOverlay {
+    background: black;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .Work-linkInner {
+    color: white;
+    padding: 10px;
+    z-index: 200;
+  }
+
+  .Work-item--small {
+    & .Work-itemInner {
+      width: 65%;
+    }
+  }
+
+  .Work-item--medium {
+    & .Work-itemInner {
+      margin-top: 100px;
+      width: 85%;
+    }
   }
 }

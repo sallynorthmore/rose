@@ -9,8 +9,12 @@ Template Name: Contact Page
 
 <?php if (have_posts()) : while (have_posts()) : the_post();?>
 
-<section id="main" class="Contact" role="main">
-	<?php the_content(); ?>
+<section id="main" class="Page--contact" role="main">
+	<div class="Page-inner">
+			<div class="Content">
+				<?php the_content(); ?>
+			</div>
+	</div>
 </section>
 
 <?php endwhile; endif; ?>

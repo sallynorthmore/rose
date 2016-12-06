@@ -121,6 +121,161 @@ Description: A portfolio web site
   }
 }
 
+/** @define Content; weak */
+
+/**
+ * Content is a special "weak" component used for styling chunks of HTML content.
+ *
+ * It uses the "lobotomized owl" technique for whitepace:
+ * http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ *
+ * This component should rarely contain other components. However, the child
+ * combinator is used to migigate leaky cascading should this have to happen.
+ */
+
+/* stylelint-disable selector-no-universal, selector-no-type */
+
+.Content {
+  font: 500 11px/13px "Helvetica", Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 580px;
+  text-align: left
+
+  /* <a> tags within <p>, <ol><li> and <ul><li> */
+}
+
+.Content * + * {
+  margin-top: 15px;
+}
+
+.Content > h1 {
+  color: black;
+  font: 700 18px/16px "Helvetica", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.Content > h2 {
+  color: black;
+  font: 600 14px/17px "Helvetica", Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Content > h3 {
+  color: black;
+  font: 600 11px/15px "Helvetica", Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.Content > p {
+  color: black;
+  font: 500 11px/13px "Helvetica", Helvetica, sans-serif;
+}
+
+.Content > * > li {
+  color: black;
+  font: 500 11px/13px "Helvetica", Helvetica, sans-serif;
+}
+
+.Content > ul {
+  padding-left: 30px;
+}
+
+.Content > ul > li {
+  list-style: square;
+}
+
+.Content > ol {
+  padding-left: 30px;
+}
+
+.Content > ol > li {
+  list-style: decimal;
+}
+
+.Content > hr {
+  background: black;
+  border: 0;
+  height: 1px;
+  width: 5px;
+}
+
+.Content blockquote {
+  border-left: 15px solid yellow;
+  padding-left: 5px;
+}
+
+.Content blockquote > p {
+  color: black;
+  font: italic 500 11px/13px var(--sans-alt);
+}
+
+.Content strong {
+  font-family: "Helvetica", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.Content * > a,
+  .Content * > * > a {
+  color: black;
+  text-decoration: underline;
+}
+
+.Content * > a:hover, .Content * > * > a:hover {/* stylelint-disable-line selector-max-specificity */
+  text-decoration: none;
+}
+
+.Content table {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.Content td {
+  margin-top: 0;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.Content td:last-child {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+.Content tr {
+  }
+
+.Content tr:first-child {
+  font-weight: 600;
+}
+
+.Content tr:nth-child(2) td {/* stylelint-disable selector-max-specificity */
+  padding-top: 10px;
+}
+
+.Content tr:last-child td {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  .Content--media {
+  }
+  .Content--media h2 {
+    margin-top: 0;
+  }
+
+  .Content--order {
+    max-width: none;
+  }
+}
+
 /** @define Header */
 
 .Header-inner {
@@ -264,13 +419,13 @@ Description: A portfolio web site
 }
 
 .Homepage-item,
-.menu-item {
+.Homepage .menu-item {
   font: 600 22px/22px "Helvetica", Helvetica, sans-serif;
   padding: 15px 0 0 15px;
 }
 
 .Homepage-link,
-.menu-item > a {
+.Homepage .menu-item > a {
   color: white;
   text-decoration: none;
   text-transform: capitalize
@@ -278,8 +433,8 @@ Description: A portfolio web site
 
 .Homepage-link:hover,
   .Homepage-link:visited,
-  .menu-item > a:hover,
-  .menu-item > a:visited {
+  .Homepage .menu-item > a:hover,
+  .Homepage .menu-item > a:visited {
   color: white;
   text-decoration: underline;
 }
@@ -326,7 +481,7 @@ Description: A portfolio web site
   }
 
   .Homepage-item,
-  .menu-item {
+  .Homepage .menu-item {
     font: 600 32px/32px "Helvetica", Helvetica, sans-serif;
   }
 }
@@ -337,7 +492,7 @@ Description: A portfolio web site
   }
 
   .Homepage-item,
-  .menu-item {
+  .Homepage .menu-item {
     font: 600 42px/42px "Helvetica", Helvetica, sans-serif;
   }
 
@@ -352,8 +507,35 @@ Description: A portfolio web site
   }
 
   .Homepage-item,
-  .menu-item {
+  .Homepage .menu-item {
     font: 600 48px/48px "Helvetica", Helvetica, sans-serif;
+  }
+}
+
+/** @define Page */
+
+.Page {
+  background: #e2ffed;
+}
+
+.Page-inner {
+  margin: 35px 10px 0;
+  text-align: center;
+}
+
+.Page--contact {
+  background: #ffdcdc;
+}
+
+@media (min-width: 600px) {
+  .Page-inner {
+    margin: 35px 100px 0;
+  }
+}
+
+@media (min-width: 860px) {
+  .Page-inner {
+    margin: 60px 215px 0;
   }
 }
 

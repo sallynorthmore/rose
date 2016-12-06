@@ -57,13 +57,13 @@
 }
 
 .Homepage-item,
-.menu-item {
+.Homepage .menu-item {
   font: 600 22px/22px var(--sans);
   padding: 15px 0 0 15px;
 }
 
 .Homepage-link,
-.menu-item > a {
+.Homepage .menu-item > a {
   color: white;
   text-decoration: none;
   text-transform: capitalize;
@@ -117,7 +117,7 @@
   }
 
   .Homepage-item,
-  .menu-item {
+  .Homepage .menu-item {
     font: 600 32px/32px var(--sans);
   }
 }
@@ -128,7 +128,7 @@
   }
 
   .Homepage-item,
-  .menu-item {
+  .Homepage .menu-item {
     font: 600 42px/42px var(--sans);
   }
 
@@ -143,7 +143,7 @@
   }
 
   .Homepage-item,
-  .menu-item {
+  .Homepage .menu-item {
     font: 600 48px/48px var(--sans);
   }
 }

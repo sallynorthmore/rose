@@ -14,8 +14,10 @@ Description: A portfolio web site
 /* Components */
 @import "components/close/index.css";
 @import "components/contact/index.css";
+@import "components/content/index.css";
 @import "components/header/index.css";
 @import "components/homepage/index.css";
+@import "components/page/index.css";
 @import "components/project/index.css";
 @import "components/work/index.css";
 

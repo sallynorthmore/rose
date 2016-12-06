@@ -2,6 +2,24 @@
 
 /*
 *
+*  Add specific classes to body depending on page
+*
+*/
+
+add_filter( 'body_class', 'custom_class' );
+function custom_class( $classes ) {
+    if ( is_page_template( 'template-about.php' ) ) {
+        $classes[] = 'Page';
+    }
+
+		if ( is_page_template( 'template-contact.php' ) ) {
+        $classes[] = 'Page Page--contact';
+    }
+    return $classes;
+}
+
+/*
+*
 *  Add editable site navigation
 *
 */

@@ -1,0 +1,148 @@
+/** @define Content; weak */
+
+/**
+ * Content is a special "weak" component used for styling chunks of HTML content.
+ *
+ * It uses the "lobotomized owl" technique for whitepace:
+ * http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ *
+ * This component should rarely contain other components. However, the child
+ * combinator is used to migigate leaky cascading should this have to happen.
+ */
+
+/* stylelint-disable selector-no-universal, selector-no-type */
+
+.Content {
+  font: 500 11px/13px var(--sans);
+  margin: 0 auto;
+  max-width: 580px;
+  text-align: left;
+
+  & * + * {
+    margin-top: 15px;
+  }
+
+  & > h1 {
+    color: black;
+    font: 700 18px/16px var(--sans);
+    text-transform: uppercase;
+  }
+
+  & > h2 {
+    color: black;
+    font: 600 14px/17px var(--sans);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & > h3 {
+    color: black;
+    font: 600 11px/15px var(--sans);
+    letter-spacing: 1px;
+  }
+
+  & > p {
+    color: black;
+    font: 500 11px/13px var(--sans);
+  }
+
+  & > * > li {
+    color: black;
+    font: 500 11px/13px var(--sans);
+  }
+
+  & > ul {
+    padding-left: 30px;
+
+    & > li {
+      list-style: square;
+    }
+  }
+
+  & > ol {
+    padding-left: 30px;
+
+    & > li {
+      list-style: decimal;
+    }
+  }
+
+  & > hr {
+    background: black;
+    border: 0;
+    height: 1px;
+    width: 5px;
+  }
+
+  & blockquote {
+    border-left: 15px solid yellow;
+    padding-left: 5px;
+
+    & > p {
+      color: black;
+      font: italic 500 11px/13px var(--sans-alt);
+    }
+  }
+
+  & strong {
+    font-family: var(--sans);
+    font-weight: 700;
+  }
+
+  /* <a> tags within <p>, <ol><li> and <ul><li> */
+  & * > a,
+  & * > * > a {
+    color: black;
+    text-decoration: underline;
+
+    &:hover { /* stylelint-disable-line selector-max-specificity */
+      text-decoration: none;
+    }
+  }
+
+  & table {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+  }
+
+  & td {
+    margin-top: 0;
+    padding: 20px 30px;
+    text-align: center;
+
+    &:last-child {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  & tr {
+    &:first-child {
+      font-weight: 600;
+    }
+
+    &:nth-child(2) td { /* stylelint-disable selector-max-specificity */
+      padding-top: 10px;
+    }
+
+    &:last-child td {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (--medium) {
+  .Content--media {
+    & h2 {
+      margin-top: 0;
+    }
+  }
+
+  .Content--order {
+    max-width: none;
+  }
+}

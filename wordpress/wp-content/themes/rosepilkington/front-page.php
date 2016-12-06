@@ -18,7 +18,8 @@
 					<p class="Homepage-tagline site-description"><?php echo $description; ?></p>
 				<?php endif; ?>
 				<div class="Homepage-nav">
-					<ul class="Homepage-items">
+					<?php wp_nav_menu( array('sort_column' => 'menu_order', 'container' => false, 'menu_class' => 'Homepage-items')); ?>
+					<!-- <ul class="Homepage-items">
 						<li class="Homepage-item">
 							<a href="/work" class="Homepage-link">Work</a>
 						</li>
@@ -28,7 +29,7 @@
 						<li class="Homepage-item">
 							<a href="/work" class="Homepage-link">Contact</a>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 			</header>
 		</div>

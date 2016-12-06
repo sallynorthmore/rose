@@ -260,19 +260,23 @@ Description: A portfolio web site
   margin: -15px 0 0 -15px;
 }
 
-.Homepage-item {
+.Homepage-item,
+.menu-item {
   font: 600 22px/22px "Helvetica", Helvetica, sans-serif;
   padding: 15px 0 0 15px;
 }
 
-.Homepage-link {
+.Homepage-link,
+.menu-item > a {
   color: white;
   text-decoration: none;
   text-transform: capitalize
 }
 
 .Homepage-link:hover,
-  .Homepage-link:visited {
+  .Homepage-link:visited,
+  .menu-item > a:hover,
+  .menu-item > a:visited {
   color: white;
   text-decoration: underline;
 }
@@ -318,7 +322,8 @@ Description: A portfolio web site
     font: 600 48px/48px "PlainExtrabold";
   }
 
-  .Homepage-item {
+  .Homepage-item,
+  .menu-item {
     font: 600 32px/32px "Helvetica", Helvetica, sans-serif;
   }
 }
@@ -328,7 +333,8 @@ Description: A portfolio web site
     font: 600 56px/56px "PlainExtrabold";
   }
 
-  .Homepage-item {
+  .Homepage-item,
+  .menu-item {
     font: 600 42px/42px "Helvetica", Helvetica, sans-serif;
   }
 
@@ -342,7 +348,8 @@ Description: A portfolio web site
     font: 600 72px/72px "PlainExtrabold";
   }
 
-  .Homepage-item {
+  .Homepage-item,
+  .menu-item {
     font: 600 48px/48px "Helvetica", Helvetica, sans-serif;
   }
 }

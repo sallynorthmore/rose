@@ -56,12 +56,14 @@
   margin: -15px 0 0 -15px;
 }
 
-.Homepage-item {
+.Homepage-item,
+.menu-item {
   font: 600 22px/22px var(--sans);
   padding: 15px 0 0 15px;
 }
 
-.Homepage-link {
+.Homepage-link,
+.menu-item > a {
   color: white;
   text-decoration: none;
   text-transform: capitalize;
@@ -114,7 +116,8 @@
     font: 600 48px/48px var(--plain);
   }
 
-  .Homepage-item {
+  .Homepage-item,
+  .menu-item {
     font: 600 32px/32px var(--sans);
   }
 }
@@ -124,7 +127,8 @@
     font: 600 56px/56px var(--plain);
   }
 
-  .Homepage-item {
+  .Homepage-item,
+  .menu-item {
     font: 600 42px/42px var(--sans);
   }
 
@@ -138,7 +142,8 @@
     font: 600 72px/72px var(--plain);
   }
 
-  .Homepage-item {
+  .Homepage-item,
+  .menu-item {
     font: 600 48px/48px var(--sans);
   }
 }

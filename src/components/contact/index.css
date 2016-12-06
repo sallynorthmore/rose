@@ -1,0 +1,41 @@
+/** @define Contact */
+
+.Contact {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.Contact a {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.Contact h2 {
+  /*font-family: var(--font-family-medium);*/
+  font-size: 24px;
+}
+
+.Contact p {
+  /*font-family: var(--font-family-light);*/
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 55px;
+}
+
+.Contact strong {
+  font-weight: 700;
+}
+
+@media (--medium) {
+  .Contact {
+    margin: 0 120px;
+
+    & p { /* stylelint-disable */
+      font-size: 36px;
+    }
+  }
+}

@@ -29,11 +29,11 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
-	<!-- animsition.css -->
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
-	<!-- jQuery -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- animsition.js -->
+	<script src="<?php bloginfo('template_directory');?>/web/js/third-party/device/device.js"></script>
 	<script src="<?php bloginfo('template_directory');?>/web/js/third-party/animsition/animsition.min.js"></script>
 	<?php wp_head(); ?>
 </head>

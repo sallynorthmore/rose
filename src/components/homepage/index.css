@@ -52,7 +52,7 @@
 }
 
 .Homepage-media {
-  background: url("web/assets/home.jpg") 0 0 no-repeat;
+  background: url("web/assets/home.jpg") top center no-repeat;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -70,9 +70,21 @@
 }
 
 .Homepage-video {
-  height: 100%;
-  min-height: 200px;
+  background: url("web/assets/home.jpg") no-repeat;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
   width: auto;
+  z-index: -100;
+
+  @nest .mobile &,
+  @nest .tablet & {
+    display: none;
+  }
 }
 
 @media (--medium) {
@@ -84,6 +96,10 @@
 @media (--large) {
   .Homepage-titleInner {
     font: 600 56px/56px var(--plain);
+  }
+
+  .Homepage-media {
+    opacity: 0.8;
   }
 }
 

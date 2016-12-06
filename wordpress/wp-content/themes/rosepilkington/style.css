@@ -80,6 +80,47 @@ Description: A portfolio web site
   }
 }
 
+/** @define Contact */
+
+.Contact {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.Contact a {
+  color: black;
+  text-decoration: none
+}
+
+.Contact a:hover {
+  text-decoration: underline;
+}
+
+.Contact h2 {
+  /*font-family: var(--font-family-medium);*/
+  font-size: 24px;
+}
+
+.Contact p {
+  /*font-family: var(--font-family-light);*/
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 55px;
+}
+
+.Contact strong {
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .Contact {
+    margin: 0 120px
+  }
+  .Contact p {/* stylelint-disable */
+    font-size: 36px;
+  }
+}
+
 /** @define Header */
 
 .Header {}
@@ -211,7 +252,7 @@ Description: A portfolio web site
 }
 
 .Homepage-media {
-  background: url("web/assets/home.jpg") 0 0 no-repeat;
+  background: url("web/assets/home.jpg") top center no-repeat;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -229,9 +270,21 @@ Description: A portfolio web site
 }
 
 .Homepage-video {
-  height: 100%;
-  min-height: 200px;
+  background: url("web/assets/home.jpg") no-repeat;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
   width: auto;
+  z-index: -100
+}
+
+.mobile .Homepage-video,
+  @nest .tablet .Homepage-video {
+  display: none;
 }
 
 @media (min-width: 600px) {
@@ -243,6 +296,10 @@ Description: A portfolio web site
 @media (min-width: 860px) {
   .Homepage-titleInner {
     font: 600 56px/56px "PlainExtrabold";
+  }
+
+  .Homepage-media {
+    opacity: 0.8;
   }
 }
 

@@ -15,6 +15,7 @@ Description: A portfolio web site
 @import "components/close/index.css";
 @import "components/contact/index.css";
 @import "components/content/index.css";
+@import "components/footer/index.css";
 @import "components/header/index.css";
 @import "components/homepage/index.css";
 @import "components/page/index.css";
@@ -25,7 +26,7 @@ Description: A portfolio web site
 @import "components/breadcrumbs/index.css";
 @import "components/button/index.css";
 @import "components/embed/index.css";
-@import "components/footer/index.css";
+
 @import "components/form/index.css";
 @import "components/grid/index.css";
 

@@ -9,7 +9,7 @@
  * @since Rose Pilkington 1.0
  */
 ?>
-
+<footer class="Footer"></footer>
 <?php wp_footer(); ?>
 </body>
 </html>

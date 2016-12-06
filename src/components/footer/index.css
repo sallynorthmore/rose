@@ -1,7 +1,7 @@
 /** @define Footer */
 
 .Footer {
-  margin: 0 auto;
+  margin: 10px auto 0;
   position: relative;
 }
 
@@ -9,10 +9,18 @@
  * Viewport: medium
  */
 
-@media (--medium) {}
+@media (--medium) {
+  .Footer {
+    margin-top: 35px;
+  }
+}
 
 /**
  * Viewport: large
  */
 
-@media (--large) {}
+@media (--large) {
+  .Footer {
+    margin-top: 70px;
+  }
+}

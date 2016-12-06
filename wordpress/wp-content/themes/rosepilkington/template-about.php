@@ -21,3 +21,5 @@ Template Name: About Page
 </section>
 
 <?php endwhile; endif; ?>
+
+<?php get_footer(); ?>

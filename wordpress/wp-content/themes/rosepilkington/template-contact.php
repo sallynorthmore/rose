@@ -11,10 +11,12 @@ Template Name: Contact Page
 
 <section id="main" class="Page--contact" role="main">
 	<div class="Page-inner">
-			<div class="Content">
+			<div class="Content Content--contact">
 				<?php the_content(); ?>
 			</div>
 	</div>
 </section>
 
 <?php endwhile; endif; ?>
+
+<?php get_footer(); ?>

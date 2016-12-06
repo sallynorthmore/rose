@@ -165,12 +165,12 @@ Description: A portfolio web site
 
 .Content > p {
   color: black;
-  font: 500 11px/13px "Helvetica", Helvetica, sans-serif;
+  font: 500 18px/22px "Helvetica", Helvetica, sans-serif;
 }
 
 .Content > * > li {
   color: black;
-  font: 500 11px/13px "Helvetica", Helvetica, sans-serif;
+  font: 500 18px/22px "Helvetica", Helvetica, sans-serif;
 }
 
 .Content > ul {
@@ -210,8 +210,11 @@ Description: A portfolio web site
 }
 
 .Content > dl > dd {
-  margin-top: 0;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-left: 10px;
+  margin-top: 0;
 }
 
 .Content > hr {
@@ -271,7 +274,6 @@ Description: A portfolio web site
 }
 
 .Content tr {
-
 }
 
 .Content tr:first-child {
@@ -286,8 +288,92 @@ Description: A portfolio web site
   padding-bottom: 10px;
 }
 
-@media (min-width: 600px) {
+.Content--contact {
+}
 
+.Content--contact a {
+  text-decoration: none;
+}
+
+.Content--contact a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .Content {
+  }
+  .Content * + * {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 860px) {
+  .Content {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+    max-width: 760px
+  }
+  .Content * + * {
+    margin-top: 40px;
+  }
+  .Content > h1 {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+  }
+  .Content > h2 {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+    text-align: left;
+  }
+  .Content > h3 {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+  }
+  .Content > p {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+  }
+  .Content > * > li {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+  }
+
+  .Content--contact {
+  }
+
+  .Content--contact > p,
+    .Content--contact > ul,
+    .Content--contact > ol {
+    font: 400 33px/36px "Helvetica", Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+    text-align: left;
+  }
+}
+
+/** @define Footer */
+
+.Footer {
+  margin: 10px auto 0;
+  position: relative;
+}
+
+/**
+ * Viewport: medium
+ */
+
+@media (min-width: 600px) {
+  .Footer {
+    margin-top: 35px;
+  }
+}
+
+/**
+ * Viewport: large
+ */
+
+@media (min-width: 860px) {
+  .Footer {
+    margin-top: 70px;
+  }
 }
 
 /** @define Header */
@@ -553,7 +639,7 @@ Description: A portfolio web site
 
 @media (min-width: 860px) {
   .Page-inner {
-    margin: 60px 215px 0;
+    margin: 70px 215px 0;
   }
 }
 
@@ -890,7 +976,7 @@ Description: A portfolio web site
 @import "components/breadcrumbs/index.css";
 @import "components/button/index.css";
 @import "components/embed/index.css";
-@import "components/footer/index.css";
+
 @import "components/form/index.css";
 @import "components/grid/index.css";
 

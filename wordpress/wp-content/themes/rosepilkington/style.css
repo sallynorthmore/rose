@@ -247,8 +247,34 @@ Description: A portfolio web site
 }
 
 .Homepage-nav {
-  display: none;
   margin-top: 15px;
+}
+
+.Homepage-items {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -15px 0 0 -15px;
+}
+
+.Homepage-item {
+  font: 600 22px/22px "Helvetica", Helvetica, sans-serif;
+  padding: 15px 0 0 15px;
+}
+
+.Homepage-link {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize
+}
+
+.Homepage-link:hover,
+  .Homepage-link:visited {
+  color: white;
+  text-decoration: underline;
 }
 
 .Homepage-media {
@@ -291,11 +317,19 @@ Description: A portfolio web site
   .Homepage-titleInner {
     font: 600 48px/48px "PlainExtrabold";
   }
+
+  .Homepage-item {
+    font: 600 32px/32px "Helvetica", Helvetica, sans-serif;
+  }
 }
 
 @media (min-width: 860px) {
   .Homepage-titleInner {
     font: 600 56px/56px "PlainExtrabold";
+  }
+
+  .Homepage-item {
+    font: 600 42px/42px "Helvetica", Helvetica, sans-serif;
   }
 
   .Homepage-media {
@@ -306,6 +340,10 @@ Description: A portfolio web site
 @media (min-width: 1440px) {
   .Homepage-titleInner {
     font: 600 72px/72px "PlainExtrabold";
+  }
+
+  .Homepage-item {
+    font: 600 48px/48px "Helvetica", Helvetica, sans-serif;
   }
 }
 

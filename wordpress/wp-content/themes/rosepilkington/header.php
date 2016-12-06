@@ -42,7 +42,6 @@
 <body <?php body_class(); ?>>
 
 		<?php if ( is_front_page() || is_home() ) : ?>
-
 		<?php else : ?>
 			<header class="Header">
 				<div class="Header-inner">

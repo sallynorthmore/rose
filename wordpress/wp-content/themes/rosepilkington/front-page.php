@@ -17,7 +17,19 @@
 				?>
 					<p class="Homepage-tagline site-description"><?php echo $description; ?></p>
 				<?php endif; ?>
-				<div class="Homepage-nav"></div>
+				<div class="Homepage-nav">
+					<ul class="Homepage-items">
+						<li class="Homepage-item">
+							<a href="/work" class="Homepage-link">Work</a>
+						</li>
+						<li class="Homepage-item">
+							<a href="/work" class="Homepage-link">About</a>
+						</li>
+						<li class="Homepage-item">
+							<a href="/work" class="Homepage-link">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</header>
 		</div>
 		<div class="Homepage-media" data-js="video"></div>

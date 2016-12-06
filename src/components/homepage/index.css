@@ -47,8 +47,30 @@
 }
 
 .Homepage-nav {
-  display: none;
   margin-top: 15px;
+}
+
+.Homepage-items {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 0 -15px;
+}
+
+.Homepage-item {
+  font: 600 22px/22px var(--sans);
+  padding: 15px 0 0 15px;
+}
+
+.Homepage-link {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:hover,
+  &:visited {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 .Homepage-media {
@@ -91,11 +113,19 @@
   .Homepage-titleInner {
     font: 600 48px/48px var(--plain);
   }
+
+  .Homepage-item {
+    font: 600 32px/32px var(--sans);
+  }
 }
 
 @media (--large) {
   .Homepage-titleInner {
     font: 600 56px/56px var(--plain);
+  }
+
+  .Homepage-item {
+    font: 600 42px/42px var(--sans);
   }
 
   .Homepage-media {
@@ -106,5 +136,9 @@
 @media (--xlarge) {
   .Homepage-titleInner {
     font: 600 72px/72px var(--plain);
+  }
+
+  .Homepage-item {
+    font: 600 48px/48px var(--sans);
   }
 }

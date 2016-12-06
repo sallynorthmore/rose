@@ -49,17 +49,7 @@
 						<a class="Header-titleInner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</h2>
 					<nav class="Header-nav">
-						<ul class="Header-items">
-							<li class="Header-item">
-								<a href="/about" class="Header-link">About</a>
-							</li>
-							<li class="Header-item">
-								<a href="/contact" class="Header-link">Contact</a>
-							</li>
-							<li class="Header-item">
-								<a href="/work" class="Header-link">Work</a>
-							</li>
-						</ul>
+						<?php wp_nav_menu( array('sort_column' => 'menu_order', 'container' => false, 'menu_class' => 'Header-items')); ?>
 					</nav>
 				</div>
 			</header>

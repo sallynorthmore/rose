@@ -123,8 +123,6 @@ Description: A portfolio web site
 
 /** @define Header */
 
-.Header {}
-
 .Header-inner {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
@@ -163,11 +161,13 @@ Description: A portfolio web site
   display: flex;
 }
 
-.Header-item {
+.Header-item,
+.Header .menu-item {
   margin: 0 0 0 10px;
 }
 
-.Header-link {
+.Header-link,
+.Header .menu-item > a {
   color: black;
   font: 400 11px/11px "Helvetica", Helvetica, sans-serif;
   text-decoration: none;
@@ -175,7 +175,9 @@ Description: A portfolio web site
 }
 
 .Header-link:hover,
-  .Header-link:visited {
+  .Header-link:visited,
+  .Header .menu-item > a:hover,
+  .Header .menu-item > a:visited {
   color: black;
   text-decoration: underline;
 }
@@ -189,7 +191,8 @@ Description: A portfolio web site
     font: 400 16px/16px "Helvetica", Helvetica, sans-serif;
   }
 
-  .Header-link {
+  .Header-link,
+  .Header .menu-item a {
     font: 400 16px/16px "Helvetica", Helvetica, sans-serif;
   }
 }

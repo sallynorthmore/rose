@@ -1,7 +1,5 @@
 /** @define Header */
 
-.Header {}
-
 .Header-inner {
   align-items: baseline;
   display: flex;
@@ -32,11 +30,13 @@
   display: flex;
 }
 
-.Header-item {
+.Header-item,
+.Header .menu-item {
   margin: 0 0 0 10px;
 }
 
-.Header-link {
+.Header-link,
+.Header .menu-item > a {
   color: black;
   font: 400 11px/11px var(--sans);
   text-decoration: none;
@@ -58,7 +58,8 @@
     font: 400 16px/16px var(--sans);
   }
 
-  .Header-link {
+  .Header-link,
+  .Header .menu-item a {
     font: 400 16px/16px var(--sans);
   }
 }

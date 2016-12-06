@@ -136,7 +136,7 @@ Description: A portfolio web site
 /* stylelint-disable selector-no-universal, selector-no-type */
 
 .Content {
-  font: 500 11px/13px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 580px;
   text-align: left
@@ -150,21 +150,17 @@ Description: A portfolio web site
 
 .Content > h1 {
   color: black;
-  font: 700 18px/16px "Helvetica", Helvetica, sans-serif;
-  text-transform: uppercase;
+  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
 }
 
 .Content > h2 {
   color: black;
-  font: 600 14px/17px "Helvetica", Helvetica, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
 }
 
 .Content > h3 {
   color: black;
-  font: 600 11px/15px "Helvetica", Helvetica, sans-serif;
-  letter-spacing: 1px;
+  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
 }
 
 .Content > p {
@@ -193,6 +189,31 @@ Description: A portfolio web site
   list-style: decimal;
 }
 
+.Content > dl {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Content > dl > dt {
+  -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+.Content > dl > dt::after {
+  content: ":";
+  display: inline;
+}
+
+.Content > dl > dd {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
 .Content > hr {
   background: black;
   border: 0;
@@ -201,13 +222,13 @@ Description: A portfolio web site
 }
 
 .Content blockquote {
-  border-left: 15px solid yellow;
+  border-left: 15px solid pink;
   padding-left: 5px;
 }
 
 .Content blockquote > p {
   color: black;
-  font: italic 500 11px/13px var(--sans-alt);
+  font: italic 500 11px/13px "Helvetica", Helvetica, sans-serif;
 }
 
 .Content strong {
@@ -250,7 +271,8 @@ Description: A portfolio web site
 }
 
 .Content tr {
-  }
+
+}
 
 .Content tr:first-child {
   font-weight: 600;
@@ -265,15 +287,7 @@ Description: A portfolio web site
 }
 
 @media (min-width: 600px) {
-  .Content--media {
-  }
-  .Content--media h2 {
-    margin-top: 0;
-  }
 
-  .Content--order {
-    max-width: none;
-  }
 }
 
 /** @define Header */
@@ -519,8 +533,12 @@ Description: A portfolio web site
 }
 
 .Page-inner {
-  margin: 35px 10px 0;
+  margin: 20px 10px 0;
   text-align: center;
+}
+
+.Page-title {
+  display: none;
 }
 
 .Page--contact {

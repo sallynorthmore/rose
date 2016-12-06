@@ -5,8 +5,12 @@
 }
 
 .Page-inner {
-  margin: 35px 10px 0;
+  margin: 20px 10px 0;
   text-align: center;
+}
+
+.Page-title {
+  display: none;
 }
 
 .Page--contact {

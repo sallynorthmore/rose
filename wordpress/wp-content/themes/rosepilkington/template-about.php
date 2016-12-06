@@ -11,6 +11,9 @@ Template Name: About Page
 
 <section id="main" class="Page" role="main">
 	<div class="Page-inner">
+		<h1 class="Page-title">
+			<?php the_title(); ?>
+		</h1>
 			<div class="Content">
 				<?php the_content(); ?>
 			</div>

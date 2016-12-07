@@ -455,7 +455,7 @@ Description: A portfolio web site
 /** @define Homepage */
 
 .Homepage {
-  background: rgb(188, 188, 188);
+  background: black;
   height: 100%;
   left: 0;
   min-height: 100vh;
@@ -520,16 +520,19 @@ Description: A portfolio web site
 }
 
 .Homepage-item,
-.Homepage .menu-item {
+.Homepage .menu-item { /* stylelint-disable-line */
   font: 600 22px/22px "Helvetica", Helvetica, sans-serif;
   padding: 15px 0 0 15px;
 }
 
 .Homepage-link,
-.Homepage .menu-item > a {
+.Homepage .menu-item > a { /* stylelint-disable-line */
   color: white;
   text-decoration: none;
   text-transform: capitalize
+
+  /* stylelint-disable */
+  /* stylelint-enable */
 }
 
 .Homepage-link:hover,
@@ -545,9 +548,12 @@ Description: A portfolio web site
   background-size: cover;
   height: 100%;
   left: 0;
+  max-height: 100%;
+  max-width: 100%;
   min-height: 100vh;
   min-width: 100%;
-  opacity: 0.7;
+  opacity: 0.9;
+  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
@@ -559,16 +565,10 @@ Description: A portfolio web site
 }
 
 .Homepage-video {
-  background: url("web/assets/home.jpg") no-repeat;
-  background-size: cover;
-  height: auto;
+  display: block;
   left: 0;
-  min-height: 100%;
   min-width: 100%;
-  position: fixed;
-  top: 0;
-  width: auto;
-  z-index: -100
+  top: 0
 }
 
 .mobile .Homepage-video,
@@ -582,7 +582,7 @@ Description: A portfolio web site
   }
 
   .Homepage-item,
-  .Homepage .menu-item {
+  .Homepage .menu-item { /* stylelint-disable-line */
     font: 600 32px/32px "Helvetica", Helvetica, sans-serif;
   }
 }
@@ -593,12 +593,12 @@ Description: A portfolio web site
   }
 
   .Homepage-item,
-  .Homepage .menu-item {
+  .Homepage .menu-item { /* stylelint-disable-line */
     font: 600 42px/42px "Helvetica", Helvetica, sans-serif;
   }
 
   .Homepage-media {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -608,7 +608,7 @@ Description: A portfolio web site
   }
 
   .Homepage-item,
-  .Homepage .menu-item {
+  .Homepage .menu-item { /* stylelint-disable-line */
     font: 600 48px/48px "Helvetica", Helvetica, sans-serif;
   }
 }

@@ -56,9 +56,20 @@
 }
 
 /**
+ * Modifier: 3:2 aspect ratio
+ *
+ * Homepage video
+ */
+
+.Embed--3by2 {
+  &::before {
+    padding-bottom: 66.66%;
+  }
+}
+
+/**
  * Modifier: 2:1 aspect ratio
  *
- * Main category image shape
  */
 
 .Embed--2by1 {

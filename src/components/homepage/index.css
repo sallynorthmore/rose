@@ -1,7 +1,7 @@
 /** @define Homepage */
 
 .Homepage {
-  background: gray(188);
+  background: black;
   height: 100%;
   left: 0;
   min-height: 100vh;
@@ -58,22 +58,24 @@
 }
 
 .Homepage-item,
-.Homepage .menu-item {
+.Homepage .menu-item { /* stylelint-disable-line */
   font: 600 22px/22px var(--sans);
   padding: 15px 0 0 15px;
 }
 
 .Homepage-link,
-.Homepage .menu-item > a {
+.Homepage .menu-item > a { /* stylelint-disable-line */
   color: white;
   text-decoration: none;
   text-transform: capitalize;
 
+  /* stylelint-disable */
   &:hover,
   &:visited {
     color: white;
     text-decoration: underline;
   }
+  /* stylelint-enable */
 }
 
 .Homepage-media {
@@ -81,9 +83,12 @@
   background-size: cover;
   height: 100%;
   left: 0;
+  max-height: 100%;
+  max-width: 100%;
   min-height: 100vh;
   min-width: 100%;
-  opacity: 0.7;
+  opacity: 0.9;
+  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
@@ -95,16 +100,10 @@
 }
 
 .Homepage-video {
-  background: url("web/assets/home.jpg") no-repeat;
-  background-size: cover;
-  height: auto;
+  display: block;
   left: 0;
-  min-height: 100%;
   min-width: 100%;
-  position: fixed;
   top: 0;
-  width: auto;
-  z-index: -100;
 
   @nest .mobile &,
   @nest .tablet & {
@@ -118,7 +117,7 @@
   }
 
   .Homepage-item,
-  .Homepage .menu-item {
+  .Homepage .menu-item { /* stylelint-disable-line */
     font: 600 32px/32px var(--sans);
   }
 }
@@ -129,12 +128,12 @@
   }
 
   .Homepage-item,
-  .Homepage .menu-item {
+  .Homepage .menu-item { /* stylelint-disable-line */
     font: 600 42px/42px var(--sans);
   }
 
   .Homepage-media {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -144,7 +143,7 @@
   }
 
   .Homepage-item,
-  .Homepage .menu-item {
+  .Homepage .menu-item { /* stylelint-disable-line */
     font: 600 48px/48px var(--sans);
   }
 }

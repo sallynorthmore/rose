@@ -22,7 +22,11 @@
 				</div>
 			</header>
 		</div>
-		<div class="Homepage-media" data-js="video"></div>
+		<div class="Homepage-media">
+			<div class="Embed Embed--3by2">
+				<div class="Embed-inner"  data-js="video"></div>
+			</div>
+		</div>
 	</div>
 </div>
 

@@ -36,6 +36,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php bloginfo('template_directory');?>/web/js/third-party/device/device.js"></script>
 	<script src="<?php bloginfo('template_directory');?>/web/js/third-party/animsition/animsition.min.js"></script>
+	<script src="<?php bloginfo('template_directory');?>/web/js/third-party/lazy-load/lazy-load.js"></script>
 	<?php wp_head(); ?>
 </head>
 

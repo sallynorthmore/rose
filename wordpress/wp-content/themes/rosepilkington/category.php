@@ -9,10 +9,21 @@ get_header(); ?>
 <section id="main" role="main" class="Work">
 	<ul class="Work-items">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 		<li class="Work-item">
 			<div class="Work-itemInner">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail('large'); ?>
+					<?php
+						// Output large images only when an animated gif
+							$url = wp_get_attachment_url( get_post_thumbnail_id( ) );
+							$filetype = wp_check_filetype($url);
+							if ($filetype[ext] == 'gif') {
+									$imageSize = 'large';
+							} else {
+								$imageSize = 'medium';
+							}
+					?>
+					<img class="lazy" data-original="<?php the_post_thumbnail_url( $imageSize ); ?>" title="<?php get_the_title(); ?>">
 				</a>
 				<h2 class="Work-title">
 					<a class="Work-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -31,9 +42,11 @@ get_header(); ?>
 <script>
 	$(document).ready(function(){
 		var classes = ["Work-item--small", "Work-item--medium", "none"];
-			$(".Work-item").each(function(){
-				console.log(classes[~~(Math.random()*classes.length)]);
-					$(this).addClass(classes[~~(Math.random()*classes.length)]);
-			});
+		$(".Work-item").each(function(){
+				$(this).addClass(classes[~~(Math.random()*classes.length)]);
+		});
+
+		// Lazy load images
+		$("img.lazy").lazyload();
 	});
 </script>

@@ -1558,6 +1558,10 @@ Description: A portfolio web site
     width: 50% !important;
     box-sizing: border-box;
   }
+
+  .gallery-columns-1 dl{
+    padding-top: 5px;
+  }
 }
 
 /* stylelint-enable */

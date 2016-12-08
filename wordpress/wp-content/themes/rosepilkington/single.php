@@ -28,7 +28,6 @@
 <script>
 	$(document).ready(function() {
 		var $videos = $('[data-js="project"] iframe');
-		console.log("Number videos here " + $videos.length);
 
 		$videos.each(function(){
 			var $div = $("<div>", {id: "foo", "class": "Project-video"});

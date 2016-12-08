@@ -153,6 +153,10 @@
 }
 
 @media (--large) {
+  .Project-inner {
+    padding-top: 30px;
+  }
+
   .Project-client {
     font: 400 33px/40px var(--sans-thin);
     max-width: 60%;

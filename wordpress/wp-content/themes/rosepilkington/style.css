@@ -364,7 +364,7 @@ Description: A portfolio web site
   }
   .Content p,
     .Content a,
-    .Content dd {
+    .Content dl > dd {
     font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
   .Content dl {
@@ -380,8 +380,7 @@ Description: A portfolio web site
   .Content--contact > p,
     .Content--contact > ul,
     .Content--contact > ol {
-    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;/*margin-left: auto;
-      margin-right: auto;*//*max-width: 520px;*/
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
     text-align: left;
   }
 }

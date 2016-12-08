@@ -13,7 +13,7 @@
 /* stylelint-disable selector-no-universal, selector-no-type */
 
 .Content {
-  font: 400 18px/22px var(--sans);
+  font: 400 18px/22px var(--sans-thin);
   margin: 0 auto;
   max-width: 580px;
   text-align: left;
@@ -24,27 +24,27 @@
 
   & > h1 {
     color: black;
-    font: 400 18px/22px var(--sans);
+    font: 400 18px/22px var(--sans-medium);
   }
 
   & > h2 {
     color: black;
-    font: 400 18px/22px var(--sans);
+    font: 400 18px/22px var(--sans-thin);
   }
 
   & > h3 {
     color: black;
-    font: 400 18px/22px var(--sans);
+    font: 400 18px/22px var(--sans-thin);
   }
 
   & > p {
     color: black;
-    font: 500 18px/22px var(--sans);
+    font: 400 18px/24px var(--sans-thin);
   }
 
   & > * > li {
     color: black;
-    font: 500 18px/22px var(--sans);
+    font: 400 18px/24px var(--sans-thin);
   }
 
   & > ul {
@@ -65,10 +65,12 @@
 
   & > dl {
     display: flex;
+    font: 400 18px/24px var(--sans-thin);
     justify-content: space-between;
 
     & > dt {
       flex: 0 0 20%;
+      font: 400 18px/24px var(--sans-medium);
 
       &::after {
         content: ":";
@@ -78,6 +80,7 @@
 
     & > dd {
       flex: 1;
+      font: 400 18px/24px var(--sans-thin);
       margin-left: 10px;
       margin-top: 0;
     }
@@ -96,19 +99,20 @@
 
     & > p {
       color: black;
-      font: italic 500 11px/13px var(--sans);
+      font: italic 400 11px/13px var(--sans-thin);
     }
   }
 
   & strong {
-    font-family: var(--sans);
-    font-weight: 700;
+    font-family: var(--sans-medium);
+    font-weight: 400;
   }
 
   /* <a> tags within <p>, <ol><li> and <ul><li> */
   & * > a,
   & * > * > a {
     color: black;
+    font: 400 18px/24px var(--sans-thin);
     text-decoration: none;
 
     &:hover { /* stylelint-disable-line selector-max-specificity */
@@ -138,7 +142,7 @@
 
   & tr {
     &:first-child {
-      font-weight: 600;
+      font-weight: 400;
     }
 
     &:nth-child(2) td { /* stylelint-disable selector-max-specificity */
@@ -151,10 +155,6 @@
   }
 }
 
-.Content--contact {
-
-}
-
 @media (--medium) {
   .Content {
     & * + * {
@@ -165,35 +165,49 @@
 
 @media (--large) {
   .Content {
-    font: 400 33px/40px var(--sans);
-    max-width: 760px;
+    font: 400 33px/40px var(--sans-thin);
+    position: relative;
+    width: 760px;
 
     & * + * {
       margin-top: 40px;
     }
 
     & > h1 {
-      font: 400 33px/40px var(--sans);
+      font: 400 33px/40px var(--sans-thin);
     }
 
     & > h2 {
-      font: 400 33px/40px var(--sans);
-      margin-left: auto;
-      margin-right: auto;
+      font: 400 33px/40px var(--sans-thin);
       max-width: 520px;
       text-align: left;
     }
 
     & > h3 {
-      font: 400 33px/40px var(--sans);
+      font: 400 33px/40px var(--sans-thin);
     }
 
     & > p {
-      font: 400 33px/40px var(--sans);
+      font: 400 33px/40px var(--sans-thin);
+      padding: 0;
     }
 
     & > * > li {
-      font: 400 33px/40px var(--sans);
+      font: 400 33px/40px var(--sans-thin);
+    }
+
+    & p,
+    & a,
+    & dd {
+      font: 400 33px/40px var(--sans-thin);
+    }
+
+    & dl {
+      margin-left: -160px;
+    }
+
+    & dl > dt {
+      font: 400 33px/40px var(--sans-medium);
     }
   }
 
@@ -201,10 +215,10 @@
     & > p,
     & > ul,
     & > ol {
-      font: 400 33px/40px var(--sans);
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 520px;
+      font: 400 33px/40px var(--sans-thin);
+      /*margin-left: auto;
+      margin-right: auto;*/
+      /*max-width: 520px;*/
       text-align: left;
     }
   }

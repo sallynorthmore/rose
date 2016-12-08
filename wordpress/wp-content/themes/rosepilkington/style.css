@@ -171,7 +171,7 @@ Description: A portfolio web site
 /* stylelint-disable selector-no-universal, selector-no-type */
 
 .Content {
-  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/22px 'HelveticaNeueThin', Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 580px;
   text-align: left
@@ -185,27 +185,27 @@ Description: A portfolio web site
 
 .Content > h1 {
   color: black;
-  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/22px 'HelveticaNeueMedium', Helvetica, sans-serif;
 }
 
 .Content > h2 {
   color: black;
-  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/22px 'HelveticaNeueThin', Helvetica, sans-serif;
 }
 
 .Content > h3 {
   color: black;
-  font: 400 18px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/22px 'HelveticaNeueThin', Helvetica, sans-serif;
 }
 
 .Content > p {
   color: black;
-  font: 500 18px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
 }
 
 .Content > * > li {
   color: black;
-  font: 500 18px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
 }
 
 .Content > ul {
@@ -228,6 +228,7 @@ Description: A portfolio web site
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -237,6 +238,7 @@ Description: A portfolio web site
   -webkit-flex: 0 0 20%;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
+  font: 400 18px/24px 'HelveticaNeueMedium', Helvetica, sans-serif;
 }
 
 .Content > dl > dt::after {
@@ -248,6 +250,7 @@ Description: A portfolio web site
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
   margin-left: 10px;
   margin-top: 0;
 }
@@ -266,17 +269,18 @@ Description: A portfolio web site
 
 .Content blockquote > p {
   color: black;
-  font: italic 500 11px/13px "Helvetica", Helvetica, sans-serif;
+  font: italic 400 11px/13px 'HelveticaNeueThin', Helvetica, sans-serif;
 }
 
 .Content strong {
-  font-family: "Helvetica", Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: 'HelveticaNeueMedium', Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 .Content * > a,
   .Content * > * > a {
   color: black;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -309,11 +313,10 @@ Description: A portfolio web site
 }
 
 .Content tr {
-
-}
+  }
 
 .Content tr:first-child {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .Content tr:nth-child(2) td {/* stylelint-disable selector-max-specificity */
@@ -322,10 +325,6 @@ Description: A portfolio web site
 
 .Content tr:last-child td {
   padding-bottom: 10px;
-}
-
-.Content--contact {
-
 }
 
 @media (min-width: 600px) {
@@ -338,30 +337,41 @@ Description: A portfolio web site
 
 @media (min-width: 860px) {
   .Content {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
-    max-width: 760px
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
+    position: relative;
+    width: 760px
   }
   .Content * + * {
     margin-top: 40px;
   }
   .Content > h1 {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
   .Content > h2 {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
     max-width: 520px;
     text-align: left;
   }
   .Content > h3 {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
   .Content > p {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
+    padding: 0;
   }
   .Content > * > li {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
+  }
+  .Content p,
+    .Content a,
+    .Content dd {
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
+  }
+  .Content dl {
+    margin-left: -160px;
+  }
+  .Content dl > dt {
+    font: 400 33px/40px 'HelveticaNeueMedium', Helvetica, sans-serif;
   }
 
   .Content--contact {
@@ -370,10 +380,8 @@ Description: A portfolio web site
   .Content--contact > p,
     .Content--contact > ul,
     .Content--contact > ol {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 520px;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;/*margin-left: auto;
+      margin-right: auto;*//*max-width: 520px;*/
     text-align: left;
   }
 }
@@ -417,7 +425,7 @@ Description: A portfolio web site
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 30px 0;
+  padding: 20px 15px 0;
 }
 
 .Header-title {

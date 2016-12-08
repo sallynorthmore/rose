@@ -18,7 +18,7 @@
 					<p class="Homepage-tagline site-description"><?php echo $description; ?></p>
 				<?php endif; ?>
 				<div class="Homepage-nav">
-					<?php wp_nav_menu( array('sort_column' => 'menu_order', 'container' => false, 'menu_class' => 'Homepage-items')); ?>
+					<?php// wp_nav_menu( array('sort_column' => 'menu_order', 'container' => false, 'menu_class' => 'Homepage-items')); ?>
 				</div>
 			</header>
 		</div>
@@ -29,8 +29,6 @@
 		</div>
 	</div>
 </div>
-
-
 <script>
 	$(document).ready(function() {
 
@@ -52,5 +50,4 @@
 		});
 	});
 </script>
-
 <?php get_footer(); ?>

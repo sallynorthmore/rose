@@ -27,7 +27,7 @@
 }
 
 .Work-title {
-  font-family: var(--sans);
+  font-family: var(--sans-thin);
   font-size: 22px;
   letter-spacing: .06em; /* stylelint-disable-line*/
   margin: 0;
@@ -46,6 +46,9 @@
 .Work-linkInner {
   color: black;
   display: block;
+  font-family: var(--sans-thin);
+  font-size: 22px;
+  letter-spacing: .06em; /* stylelint-disable-line*/
   padding: 8px 0 30px;
 }
 
@@ -72,18 +75,21 @@
   }
 
   .Work-item {
+    display: block;
     flex: none;
     max-width: none;
     width: 33.3333% !important; /* stylelint-disable-line*/
   }
 
   .Work-itemInner {
+    display: block;
     float: left;
     margin-left: 0;
     width: 95%;
   }
 
   .Work-title {
+    display: block;
     height: 100%;
     left: 0;
     position: absolute;
@@ -106,7 +112,7 @@
   }
 
   .Work-linkOverlay {
-    background: black;
+    background: white;
     display: block;
     height: 100%;
     left: 0;
@@ -119,14 +125,15 @@
   }
 
   .Work-linkInner {
-    color: white;
+    color: black;
+    display: block;
     padding: 10px;
     z-index: 200;
   }
 
   .Work-item--small {
     & .Work-itemInner {
-      width: 65%;
+      width: 75%;
     }
   }
 

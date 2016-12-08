@@ -902,7 +902,7 @@ Description: A portfolio web site
 }
 
 .Work-title {
-  font-family: "Helvetica", Helvetica, sans-serif;
+  font-family: 'HelveticaNeueThin', Helvetica, sans-serif;
   font-size: 22px;
   letter-spacing: .06em; /* stylelint-disable-line*/
   margin: 0;
@@ -921,6 +921,9 @@ Description: A portfolio web site
 .Work-linkInner {
   color: black;
   display: block;
+  font-family: 'HelveticaNeueThin', Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: .06em; /* stylelint-disable-line*/
   padding: 8px 0 30px;
 }
 
@@ -951,6 +954,7 @@ Description: A portfolio web site
   }
 
   .Work-item {
+    display: block;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
@@ -959,12 +963,14 @@ Description: A portfolio web site
   }
 
   .Work-itemInner {
+    display: block;
     float: left;
     margin-left: 0;
     width: 95%;
   }
 
   .Work-title {
+    display: block;
     height: 100%;
     left: 0;
     position: absolute;
@@ -993,7 +999,7 @@ Description: A portfolio web site
   }
 
   .Work-linkOverlay {
-    background: black;
+    background: white;
     display: block;
     height: 100%;
     left: 0;
@@ -1006,7 +1012,8 @@ Description: A portfolio web site
   }
 
   .Work-linkInner {
-    color: white;
+    color: black;
+    display: block;
     padding: 10px;
     z-index: 200;
   }
@@ -1015,7 +1022,7 @@ Description: A portfolio web site
   }
 
   .Work-item--small .Work-itemInner {
-    width: 65%;
+    width: 75%;
   }
 
   .Work-item--medium {

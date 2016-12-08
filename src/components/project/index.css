@@ -77,6 +77,10 @@
   /* stylelint-enable */
 }
 
+.Project-button {
+  margin: 10px 0 0;
+}
+
 @media (--medium) {
   .Project {
     text-align: center;
@@ -128,7 +132,7 @@
   }
 
   .Project-button {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 }
 

@@ -37,7 +37,7 @@
 
 			video.appendTo($div);
 			$div.insertAfter(wrapper);
-			// newDiv.after(wrapper);
 		});
 	});
 </script>
+<?php get_footer(); ?>

@@ -764,6 +764,10 @@ Description: A portfolio web site
   text-decoration: underline;
 }
 
+.Project-button {
+  margin: 10px 0 0;
+}
+
 @media (min-width: 600px) {
   .Project {
     text-align: center;
@@ -816,7 +820,7 @@ Description: A portfolio web site
   }
 
   .Project-button {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 }
 

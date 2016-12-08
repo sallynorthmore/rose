@@ -50,3 +50,4 @@ get_header(); ?>
 		$("img.lazy").lazyload();
 	});
 </script>
+<?php get_footer(); ?>

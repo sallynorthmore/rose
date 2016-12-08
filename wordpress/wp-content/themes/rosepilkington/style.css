@@ -705,22 +705,24 @@ Description: A portfolio web site
 }
 
 .Project-inner {
-  padding: 10px;
+  padding: 15px;
 }
 
-.Project-client {
-  font: 400 16px/16px "Helvetica", Helvetica, sans-serif;
+.Project-client,
+.Project-client * {/* stylelint-disable-line */
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
   margin: 10px 0 0;
 }
 
 .Project-title {
-  font: 600 18px/18px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/24px 'HelveticaNeueMedium', Helvetica, sans-serif;
   margin: 0;
-  padding-left: 50px;
+
+  /* padding-left: 50px; */
 }
 
 .Project-content {
-  font: 400 18px/18px "Helvetica", Helvetica, sans-serif;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
   margin: 0
 
   /* stylelint-disable */
@@ -731,11 +733,11 @@ Description: A portfolio web site
 }
 
 .Project-content > p,
+  .Project-content > p *,
   .Project-content > ul,
   .Project-content > ol {
-  font: 400 16px/16px "Helvetica", Helvetica, sans-serif;
-  margin: 15px 0 0;
-  padding-left: 50px;
+  font: 400 18px/24px 'HelveticaNeueThin', Helvetica, sans-serif;
+  margin: 0;/*padding-left: 50px;*/
 }
 
 .Project-content > p:first-child {/* stylelint-disable-line */
@@ -775,21 +777,26 @@ Description: A portfolio web site
   }
 
   .Project-client {
-    font: 400 24px/24px "Helvetica", Helvetica, sans-serif;
+    font: 400 24px/30px 'HelveticaNeueThin', Helvetica, sans-serif;
+    margin-left: -70px;
     margin-top: 0;
     max-width: 420px;
-    padding-left: 50px;
+    padding-left: 125px
+  }
+
+  .Project-client * {/* stylelint-disable-line */
+    font: 400 24px/30px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
 
   .Project-title {
-    font: 600 24px/24px "Helvetica", Helvetica, sans-serif;
+    font: 400 24px/30px 'HelveticaNeueMedium', Helvetica, sans-serif;
     margin: 0;
     max-width: 420px;
     padding-left: 125px;
   }
 
   .Project-content {
-    font: 400 24px/24px "Helvetica", Helvetica, sans-serif
+    font: 400 24px/30px 'HelveticaNeueThin', Helvetica, sans-serif
 
     /* stylelint-disable */
     /* stylelint-enable */
@@ -798,10 +805,14 @@ Description: A portfolio web site
   .Project-content > p,
     .Project-content > ul,
     .Project-content > ol {
-    font: 400 24px/24px "Helvetica", Helvetica, sans-serif;
-    margin: 10px 0 0;
+    font: 400 24px/30px 'HelveticaNeueThin', Helvetica, sans-serif;
+    margin: 0;
     max-width: 420px;
     padding-left: 125px;
+  }
+
+  .Project-content > p * {
+    font: 400 24px/30px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
 
   .Project-button {
@@ -817,22 +828,25 @@ Description: A portfolio web site
 
 @media (min-width: 860px) {
   .Project-client {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
     max-width: 60%;
     padding-left: 20%
   }
+  .Project-client * {/* stylelint-disable-line */
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
+  }
   .Project-client .post-meta-key {/* stylelint-disable-line */
-    margin-left: -110px;
+    margin-left: -25px;
   }
 
   .Project-title {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueMedium', Helvetica, sans-serif;
     max-width: 60%;
     padding-left: 20%;
   }
 
   .Project-content {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif
 
     /* stylelint-disable */
     /* stylelint-enable */
@@ -841,26 +855,32 @@ Description: A portfolio web site
   .Project-content > p,
     .Project-content > ul,
     .Project-content > ol {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
     max-width: 60%;
-    margin-top: 20px;
+    margin-top: 0;
     padding-left: 20%;
+  }
+
+  .Project-content p * {
+    font: 400 33px/40px 'HelveticaNeueThin', Helvetica, sans-serif;
+  }
+
+  .Project-content p strong {
+    font-family: 'HelveticaNeueMedium', Helvetica, sans-serif;
   }
 }
 
 @media (min-width: 1440px) {
   .Project-client {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
     max-width: 800px;
   }
 
   .Project-title {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
     max-width: 800px;
   }
 
   .Project-content {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif
+
     /* stylelint-disable */
     /* stylelint-enable */
   }
@@ -868,7 +888,6 @@ Description: A portfolio web site
   .Project-content > p,
     .Project-content > ul,
     .Project-content > ol {
-    font: 400 33px/40px "Helvetica", Helvetica, sans-serif;
     max-width: 800px;
   }
 }

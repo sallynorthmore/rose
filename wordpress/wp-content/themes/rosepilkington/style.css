@@ -730,6 +730,8 @@ Description: A portfolio web site
 
   /* stylelint-disable */
   /* stylelint-enable */
+
+  /* For a single image in the WYSIWYG editor */
 }
 
 .Project-content > p,
@@ -762,6 +764,10 @@ Description: A portfolio web site
 
 .Project-content a:hover, .Project-content a:visited:hover {
   text-decoration: underline;
+}
+
+.Project-content .Project-single {
+  margin: 10px 0 0 -125px;
 }
 
 .Project-button {
@@ -804,6 +810,8 @@ Description: A portfolio web site
 
     /* stylelint-disable */
     /* stylelint-enable */
+
+    /* For a single image in the WYSIWYG editor */
   }
 
   .Project-content > p,
@@ -817,6 +825,10 @@ Description: A portfolio web site
 
   .Project-content > p * {
     font: 400 24px/30px 'HelveticaNeueThin', Helvetica, sans-serif;
+  }
+
+  .Project-content .Project-single {
+    margin: 20px 0 0;
   }
 
   .Project-button {
@@ -854,6 +866,8 @@ Description: A portfolio web site
 
     /* stylelint-disable */
     /* stylelint-enable */
+
+    /* For a single image in the WYSIWYG editor */
   }
 
   .Project-content > p,
@@ -871,6 +885,10 @@ Description: A portfolio web site
 
   .Project-content p strong {
     font-family: 'HelveticaNeueMedium', Helvetica, sans-serif;
+  }
+
+  .Project-content .Project-single {
+    margin: 40px 0 0;
   }
 }
 

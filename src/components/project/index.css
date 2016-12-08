@@ -75,6 +75,11 @@
     }
   }
   /* stylelint-enable */
+
+  /* For a single image in the WYSIWYG editor */
+  & .Project-single {
+    margin: 10px 0 0 -125px;
+  }
 }
 
 .Project-button {
@@ -129,6 +134,11 @@
       font: 400 24px/30px var(--sans-thin);
     }
     /* stylelint-enable */
+
+    /* For a single image in the WYSIWYG editor */
+    & .Project-single {
+      margin: 20px 0 0;
+    }
   }
 
   .Project-button {
@@ -184,6 +194,11 @@
       font-family: var(--sans-medium);
     }
     /* stylelint-enable */
+
+    /* For a single image in the WYSIWYG editor */
+    & .Project-single {
+      margin: 40px 0 0;
+    }
   }
 }
 

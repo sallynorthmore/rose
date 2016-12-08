@@ -47,8 +47,7 @@
 }
 
 .Homepage-nav {
-  display: none;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .Homepage-items {
@@ -59,7 +58,7 @@
 
 .Homepage-item,
 .Homepage .menu-item { /* stylelint-disable-line */
-  font: 600 22px/22px var(--sans);
+  font: 400 22px/22px var(--sans-medium);
   padding: 15px 0 0 15px;
 }
 
@@ -119,7 +118,7 @@
 
   .Homepage-item,
   .Homepage .menu-item { /* stylelint-disable-line */
-    font: 600 32px/32px var(--sans);
+    font: 400 32px/32px var(--sans-medium);
   }
 }
 
@@ -130,7 +129,7 @@
 
   .Homepage-item,
   .Homepage .menu-item { /* stylelint-disable-line */
-    font: 600 42px/42px var(--sans);
+    font: 400 42px/42px var(--sans-medium);
   }
 
   .Homepage-media {
@@ -145,6 +144,6 @@
 
   .Homepage-item,
   .Homepage .menu-item { /* stylelint-disable-line */
-    font: 600 48px/48px var(--sans);
+    font: 400 48px/48px var(--sans-medium);
   }
 }

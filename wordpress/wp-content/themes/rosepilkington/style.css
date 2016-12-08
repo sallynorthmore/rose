@@ -544,8 +544,7 @@ Description: A portfolio web site
 }
 
 .Homepage-nav {
-  display: none;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .Homepage-items {
@@ -560,7 +559,7 @@ Description: A portfolio web site
 
 .Homepage-item,
 .Homepage .menu-item { /* stylelint-disable-line */
-  font: 600 22px/22px "Helvetica", Helvetica, sans-serif;
+  font: 400 22px/22px 'HelveticaNeueMedium', Helvetica, sans-serif;
   padding: 15px 0 0 15px;
 }
 
@@ -607,7 +606,7 @@ Description: A portfolio web site
   display: block;
   left: 0;
   min-height: 100vh;
-  min-width: 100%;;
+  min-width: 100%;
   top: 0
 }
 
@@ -623,7 +622,7 @@ Description: A portfolio web site
 
   .Homepage-item,
   .Homepage .menu-item { /* stylelint-disable-line */
-    font: 600 32px/32px "Helvetica", Helvetica, sans-serif;
+    font: 400 32px/32px 'HelveticaNeueMedium', Helvetica, sans-serif;
   }
 }
 
@@ -634,7 +633,7 @@ Description: A portfolio web site
 
   .Homepage-item,
   .Homepage .menu-item { /* stylelint-disable-line */
-    font: 600 42px/42px "Helvetica", Helvetica, sans-serif;
+    font: 400 42px/42px 'HelveticaNeueMedium', Helvetica, sans-serif;
   }
 
   .Homepage-media {
@@ -649,7 +648,7 @@ Description: A portfolio web site
 
   .Homepage-item,
   .Homepage .menu-item { /* stylelint-disable-line */
-    font: 600 48px/48px "Helvetica", Helvetica, sans-serif;
+    font: 400 48px/48px 'HelveticaNeueMedium', Helvetica, sans-serif;
   }
 }
 

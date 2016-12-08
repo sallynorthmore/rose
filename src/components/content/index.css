@@ -109,10 +109,10 @@
   & * > a,
   & * > * > a {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover { /* stylelint-disable-line selector-max-specificity */
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 
@@ -152,13 +152,7 @@
 }
 
 .Content--contact {
-  & a {
-    text-decoration: none;
-  }
 
-  & a:hover {
-    text-decoration: underline;
-  }
 }
 
 @media (--medium) {

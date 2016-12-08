@@ -89,11 +89,12 @@
   }
 
   .Work-title {
-    display: block;
+    display: inline-block;
     height: 100%;
     left: 0;
     position: absolute;
     top: -2px;
+    top: 0;
     width: 100%;
   }
 
@@ -133,14 +134,22 @@
 
   .Work-item--small {
     & .Work-itemInner {
-      width: 75%;
+      width: 85%;
     }
   }
 
   .Work-item--medium {
     & .Work-itemInner {
       margin-top: 100px;
-      width: 85%;
+      width: 95%;
+    }
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+      & .Work-itemInner { /* stylelint-disable-line */
+        margin-top: 0;
+      }
     }
   }
 }

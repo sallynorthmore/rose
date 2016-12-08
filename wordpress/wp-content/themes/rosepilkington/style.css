@@ -970,11 +970,12 @@ Description: A portfolio web site
   }
 
   .Work-title {
-    display: block;
+    display: inline-block;
     height: 100%;
     left: 0;
     position: absolute;
     top: -2px;
+    top: 0;
     width: 100%;
   }
 
@@ -1022,7 +1023,7 @@ Description: A portfolio web site
   }
 
   .Work-item--small .Work-itemInner {
-    width: 75%;
+    width: 85%;
   }
 
   .Work-item--medium {
@@ -1030,7 +1031,16 @@ Description: A portfolio web site
 
   .Work-item--medium .Work-itemInner {
     margin-top: 100px;
-    width: 85%;
+    width: 95%;
+  }
+
+  .Work-item--medium:first-child,
+    .Work-item--medium:nth-child(2),
+    .Work-item--medium:nth-child(3) {
+  }
+
+  .Work-item--medium:first-child .Work-itemInner, .Work-item--medium:nth-child(2) .Work-itemInner, .Work-item--medium:nth-child(3) .Work-itemInner {/* stylelint-disable-line */
+    margin-top: 0;
   }
 }
 

@@ -165,7 +165,7 @@
 
 @media (--large) {
   .Content {
-    font: 400 33px/36px var(--sans);
+    font: 400 33px/40px var(--sans);
     max-width: 760px;
 
     & * + * {
@@ -173,11 +173,11 @@
     }
 
     & > h1 {
-      font: 400 33px/36px var(--sans);
+      font: 400 33px/40px var(--sans);
     }
 
     & > h2 {
-      font: 400 33px/36px var(--sans);
+      font: 400 33px/40px var(--sans);
       margin-left: auto;
       margin-right: auto;
       max-width: 520px;
@@ -185,15 +185,15 @@
     }
 
     & > h3 {
-      font: 400 33px/36px var(--sans);
+      font: 400 33px/40px var(--sans);
     }
 
     & > p {
-      font: 400 33px/36px var(--sans);
+      font: 400 33px/40px var(--sans);
     }
 
     & > * > li {
-      font: 400 33px/36px var(--sans);
+      font: 400 33px/40px var(--sans);
     }
   }
 
@@ -201,7 +201,7 @@
     & > p,
     & > ul,
     & > ol {
-      font: 400 33px/36px var(--sans);
+      font: 400 33px/40px var(--sans);
       margin-left: auto;
       margin-right: auto;
       max-width: 520px;

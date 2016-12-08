@@ -3,6 +3,10 @@
   --sans: "Helvetica", Helvetica, sans-serif;
   --plain: "PlainExtrabold";
 
+  --sans-bold: 'HelveticaNeueBold', Helvetica, sans-serif;
+  --sans-thin: 'HelveticaNeueThin', Helvetica, sans-serif;
+  --sans-medium: 'HelveticaNeueMedium', Helvetica, sans-serif;
+
   /* z-index */
   --depth-1: 100;
   --depth-2: 200;

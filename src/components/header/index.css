@@ -4,7 +4,7 @@
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px 0;
+  padding: 20px 30px 0;
 }
 
 .Header-title {
@@ -13,7 +13,7 @@
 
 .Header-titleInner {
   color: black;
-  font: 400 11px/11px var(--sans);
+  font: 400 14px/14px var(--sans-medium);
   text-decoration: none;
 
   &:hover,
@@ -31,35 +31,37 @@
 }
 
 .Header-item,
-.Header .menu-item {
+.Header .menu-item { /* stylelint-disable-line */
   margin: 0 0 0 10px;
 }
 
 .Header-link,
-.Header .menu-item > a {
+.Header .menu-item > a { /* stylelint-disable-line */
   color: black;
-  font: 400 11px/11px var(--sans);
+  font: 400 14px/14px var(--sans-medium);
   text-decoration: none;
   white-space: nowrap;
 
+  /* stylelint-disable */
   &:hover,
   &:visited {
     color: black;
     text-decoration: underline;
   }
+  /* stylelint-enable */
 }
 
 @media (--medium) {
   .Header-inner {
-    padding: 35px 70px 0;
+    padding: 25px 70px 0;
   }
 
   .Header-titleInner {
-    font: 400 16px/16px var(--sans);
+    font: 400 18px/18px var(--sans-medium);
   }
 
   .Header-link,
-  .Header .menu-item a {
-    font: 400 16px/16px var(--sans);
+  .Header .menu-item a { /* stylelint-disable-line */
+    font: 400 18px/18px var(--sans-medium);
   }
 }

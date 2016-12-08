@@ -567,7 +567,8 @@ Description: A portfolio web site
 .Homepage-video {
   display: block;
   left: 0;
-  min-width: 100%;
+  min-height: 100vh;
+  min-width: 100%;;
   top: 0
 }
 

@@ -1534,8 +1534,12 @@ Description: A portfolio web site
 @media (min-width: 860px) {
 
   /* First gallery item should have a 40px top margin */
-  .Project-content p ~ .gallery {
+  p ~ .gallery {
     margin-top: 35px !important;
+  }
+
+  .gallery-columns-1 dl {
+    padding-top: 5px;
   }
 
   .gallery-columns-2 {
@@ -1565,8 +1569,8 @@ Description: A portfolio web site
     box-sizing: border-box;
   }
 
-  .gallery-columns-1 dl{
-    padding-top: 5px;
+  .gallery-columns-2 ~ .gallery-size-full {
+    margin-top: 10px !important;
   }
 }
 

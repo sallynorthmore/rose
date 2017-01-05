@@ -1,7 +1,7 @@
 /** @define Page */
 
 .Page {
-  background: #e2ffed;
+  background: #dbffbb;
 }
 
 .Page-inner {
@@ -14,7 +14,7 @@
 }
 
 .Page--contact {
-  background: #ffdcdc;
+  background: #ecd2ff;
 }
 
 @media (--medium) {

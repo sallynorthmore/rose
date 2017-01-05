@@ -655,7 +655,7 @@ Description: A portfolio web site
 /** @define Page */
 
 .Page {
-  background: #e2ffed;
+  background: #dbffbb;
 }
 
 .Page-inner {
@@ -668,7 +668,7 @@ Description: A portfolio web site
 }
 
 .Page--contact {
-  background: #ffdcdc;
+  background: #ecd2ff;
 }
 
 @media (min-width: 600px) {

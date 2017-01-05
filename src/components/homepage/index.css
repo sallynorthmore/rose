@@ -72,10 +72,53 @@
   &:hover,
   &:visited {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
   }
   /* stylelint-enable */
 }
+
+/* Menu Animation */
+
+/* stylelint-disable */
+.Homepage .menu-item > a {
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.Homepage .menu-item > a::before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease;
+  width: 0;
+}
+
+.Homepage .menu-item > a::after {
+  background: white;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width 0.3s ease;
+  width: 0;
+}
+.Homepage .menu-item > a:hover:before {
+  background: white;
+  transition: width 0.3s ease;
+  width: 100%;
+}
+.Homepage .menu-item > a:hover:after {
+  background: transparent;
+  transition: width 0s ease;
+  width: 100%;
+}
+/* stylelint-enable */
 
 .Homepage-media {
   background: url("web/assets/home.jpg") top center no-repeat;

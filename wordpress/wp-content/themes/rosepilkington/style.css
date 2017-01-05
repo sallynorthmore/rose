@@ -473,8 +473,55 @@ Description: A portfolio web site
   .Header .menu-item > a:hover,
   .Header .menu-item > a:visited {
   color: black;
-  text-decoration: underline;
+  text-decoration: noned;
 }
+
+/* Menu Animation */
+
+/* stylelint-disable */
+
+.Header .menu-item > a {
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.Header .menu-item > a::before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease;
+  width: 0;
+}
+
+.Header .menu-item > a::after {
+  background: black;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width 0.3s ease;
+  width: 0;
+}
+
+.Header .menu-item > a:hover:before {
+  background: black;
+  transition: width 0.3s ease;
+  width: 100%;
+}
+
+.Header .menu-item > a:hover:after {
+  background: transparent;
+  transition: width 0s ease;
+  width: 100%;
+}
+
+/* stylelint-enable */
 
 @media (min-width: 600px) {
   .Header-inner {

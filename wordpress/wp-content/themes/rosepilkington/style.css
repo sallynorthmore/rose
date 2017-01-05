@@ -1532,6 +1532,12 @@ Description: A portfolio web site
 }
 
 @media (min-width: 860px) {
+
+  /* First gallery item should have a 40px top margin */
+  .Project-content p ~ .gallery {
+    margin-top: 35px !important;
+  }
+
   .gallery-columns-2 {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1547,6 +1553,7 @@ Description: A portfolio web site
             flex-wrap: wrap;
     margin: 35px 0 0 -10px !important
   }
+
   .gallery-columns-2 .gallery-item {
     display: block;
     -webkit-flex: none;

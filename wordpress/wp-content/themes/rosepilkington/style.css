@@ -671,9 +671,22 @@ Description: A portfolio web site
   background: #ecd2ff;
 }
 
+.Page-footer {
+  bottom: 40px;
+  font: 300 14px/14px 'HelveticaNeueThin', Helvetica, sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 @media (min-width: 600px) {
   .Page-inner {
     margin: 35px 100px 0;
+  }
+
+  .Page-footer {
+    bottom: 70px;
+    font: 300 16px/16px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
 }
 

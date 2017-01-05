@@ -17,9 +17,22 @@
   background: #ecd2ff;
 }
 
+.Page-footer {
+  bottom: 40px;
+  font: 300 14px/14px var(--sans-thin);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 @media (--medium) {
   .Page-inner {
     margin: 35px 100px 0;
+  }
+
+  .Page-footer {
+    bottom: 70px;
+    font: 300 16px/16px var(--sans-thin);
   }
 }
 

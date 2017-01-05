@@ -14,9 +14,9 @@ Template Name: About Page
 		<h1 class="Page-title">
 			<?php the_title(); ?>
 		</h1>
-			<div class="Content">
-				<?php the_content(); ?>
-			</div>
+		<div class="Content">
+			<?php the_content(); ?>
+		</div>
 	</div>
 </section>
 

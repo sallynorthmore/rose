@@ -81,6 +81,7 @@
     margin-top: 10px !important;
   }
 
+  .Project-video ~ .gallery,
   .gallery ~ .gallery {
     margin-top: 0px !important;
   }

@@ -29,6 +29,7 @@
 	$(document).ready(function() {
 		var $videos = $('[data-js="project"] iframe');
 
+		// Wrap videos in div.Project-video
 		$videos.each(function(){
 			var $div = $("<div>", {id: "foo", "class": "Project-video"});
 			var video = $(this);
@@ -36,6 +37,13 @@
 
 			video.appendTo($div);
 			$div.insertAfter(wrapper);
+		});
+
+		// Remove WP <style> for gallerys
+		var $style = $('[data-js="project"] style');
+
+		$style.each(function(){
+			$(this).remove();
 		});
 	});
 </script>

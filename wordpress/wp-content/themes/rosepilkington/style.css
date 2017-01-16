@@ -1153,7 +1153,7 @@ Description: A portfolio web site
   }
 
   .Work-linkOverlay {
-    background: #ffdcdc;
+    background: white;
     display: block;
     height: 100%;
     left: 0;
@@ -1196,21 +1196,6 @@ Description: A portfolio web site
     margin-top: 0;
   }
 }
-
-/*
-@import "components/breadcrumbs/index.css";
-@import "components/button/index.css";
-@import "components/embed/index.css";
-
-@import "components/form/index.css";
-@import "components/grid/index.css";
-
-@import "components/media/index.css";
-@import "components/navigation/index.css";
-@import "components/page/index.css";
-@import "components/pagination/index.css";
-@import "components/social/index.css";
- */
 
 /* Third Party */
 
@@ -1657,7 +1642,7 @@ Description: A portfolio web site
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin: 35px 0 0 -10px !important
+    margin: 35px 0 0 -15px !important
   }
 
   .gallery-columns-2 .gallery-item {
@@ -1680,6 +1665,7 @@ Description: A portfolio web site
     margin-top: 10px !important;
   }
 
+  .Project-video ~ .gallery,
   .gallery ~ .gallery {
     margin-top: 0px !important;
   }

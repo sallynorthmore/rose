@@ -60,7 +60,7 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 35px 0 0 -10px !important;
+    margin: 35px 0 0 -15px !important;
 
     & .gallery-item {
       display: block;

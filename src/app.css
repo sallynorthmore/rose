@@ -22,21 +22,6 @@ Description: A portfolio web site
 @import "components/project/index.css";
 @import "components/work/index.css";
 
-/*
-@import "components/breadcrumbs/index.css";
-@import "components/button/index.css";
-@import "components/embed/index.css";
-
-@import "components/form/index.css";
-@import "components/grid/index.css";
-
-@import "components/media/index.css";
-@import "components/navigation/index.css";
-@import "components/page/index.css";
-@import "components/pagination/index.css";
-@import "components/social/index.css";
- */
-
 /* Third Party */
 @import "third-party/animsition/animsition.min.css";
 @import "third-party/wordpress/gallery.css";

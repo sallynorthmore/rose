@@ -8,9 +8,25 @@ get_header(); ?>
 
 <section id="main" role="main" class="Work">
 	<ul class="Work-items">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php
 
-		<li class="Work-item">
+			$counter = 0;
+			$class = "";
+
+			if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+			$counter++;
+
+			if ($counter % 3 == 0) {
+				$class = " Work-item--small";
+			}
+
+			if ($counter % 2 == 0) {
+				$class = " Work-item--medium";
+			}
+
+		?>
+		<li class="Work-item<?php echo "$class" ?>">
 			<div class="Work-itemInner">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<?php
@@ -41,10 +57,10 @@ get_header(); ?>
 </section>
 <script>
 	$(document).ready(function(){
-		var classes = ["Work-item--small", "Work-item--medium", "none"];
-		$(".Work-item").each(function(){
-				$(this).addClass(classes[~~(Math.random()*classes.length)]);
-		});
+		// var classes = ["Work-item--small", "Work-item--medium", "none"];
+		// $(".Work-item").each(function(){
+				// $(this).addClass(classes[~~(Math.random()*classes.length)]);
+		// });
 
 		// Lazy load images
 		$("img.lazy").lazyload();

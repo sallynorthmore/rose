@@ -207,7 +207,7 @@
     }
 
     & dl > dt {
-      font: 400 33px/40px var(--sans-medium);
+      font: 400 33px/38px var(--sans-medium);
     }
   }
 

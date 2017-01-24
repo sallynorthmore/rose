@@ -749,7 +749,7 @@ Description: A portfolio web site
 /** @define Page */
 
 .Page {
-  background: #dbffbb;
+  background: rgb(219, 255, 187);
 }
 
 .Page-inner {
@@ -762,15 +762,14 @@ Description: A portfolio web site
 }
 
 .Page--contact {
-  background: #ecd2ff;
+  background: rgb(236, 210, 255);
 }
 
 .Page-footer {
   bottom: 40px;
   font: 300 14px/14px 'HelveticaNeueThin', Helvetica, sans-serif;
-  position: absolute;
-  text-align: center;
-  width: 100%;
+  left: 10px;
+  position: fixed;
 }
 
 @media (min-width: 600px) {
@@ -781,12 +780,28 @@ Description: A portfolio web site
   .Page-footer {
     bottom: 70px;
     font: 300 16px/16px 'HelveticaNeueThin', Helvetica, sans-serif;
+    left: auto;
+    text-align: left
+  }
+
+  .Page-footer > p {/* stylelint-disable-line */
+    font: 300 16px/16px 'HelveticaNeueThin', Helvetica, sans-serif;
   }
 }
 
 @media (min-width: 860px) {
   .Page-inner {
     margin: 70px 215px 0;
+  }
+
+  .Page-footer {
+    bottom: 40px
+  }
+
+  .Page-footer > p {/* stylelint-disable-line */
+    font: 300 16px/16px 'HelveticaNeueThin', Helvetica, sans-serif;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 

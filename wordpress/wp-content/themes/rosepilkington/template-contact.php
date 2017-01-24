@@ -14,12 +14,13 @@ Template Name: Contact Page
 			<div class="Content Content--contact">
 				<?php the_content(); ?>
 			</div>
+			<!-- <div class="Page-footer">
+				<p>
+					Copyright &copy; All Images Rose Pilkington 2016
+				</p>
+			</div> -->
 	</div>
-	<div class="Page-footer">
-		<p>
-			Copyright &copy; All Images Rose Pilkington 2016
-		</p>
-	</div>
+
 </section>
 
 <?php endwhile; endif; ?>

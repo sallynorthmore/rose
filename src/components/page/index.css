@@ -1,7 +1,7 @@
 /** @define Page */
 
 .Page {
-  background: #dbffbb;
+  background: rgb(219, 255, 187);
 }
 
 .Page-inner {
@@ -14,15 +14,14 @@
 }
 
 .Page--contact {
-  background: #ecd2ff;
+  background: rgb(236, 210, 255);
 }
 
 .Page-footer {
   bottom: 40px;
   font: 300 14px/14px var(--sans-thin);
-  position: absolute;
-  text-align: center;
-  width: 100%;
+  left: 10px;
+  position: fixed;
 }
 
 @media (--medium) {
@@ -33,11 +32,27 @@
   .Page-footer {
     bottom: 70px;
     font: 300 16px/16px var(--sans-thin);
+    left: auto;
+    text-align: left;
+
+    & > p { /* stylelint-disable-line */
+      font: 300 16px/16px var(--sans-thin);
+    }
   }
 }
 
 @media (--large) {
   .Page-inner {
     margin: 70px 215px 0;
+  }
+
+  .Page-footer {
+    bottom: 40px;
+
+    & > p { /* stylelint-disable-line */
+      font: 300 16px/16px var(--sans-thin);
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
 }

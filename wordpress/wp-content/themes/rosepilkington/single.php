@@ -4,9 +4,11 @@
 <?php if (have_posts()) : while (have_posts()) : the_post();?>
 <section id="main" role="main" class="Project">
 	<div class="Project-inner">
-
 		<div class="Project-client">
-			<?php the_meta(); ?>
+			<?php
+				$client = get_post_meta( $post->ID, 'Client', true );
+				echo "Client: " . $client;
+			?>
 		</div>
 		<h1 class="Project-title">
 			<?php the_title(); ?>

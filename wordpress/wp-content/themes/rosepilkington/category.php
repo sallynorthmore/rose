@@ -10,23 +10,20 @@ get_header(); ?>
 	<ul class="Work-items">
 		<?php
 
-			$counter = 0;
 			$class = "";
 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-			$counter++;
+				$thumb_size = get_post_meta( $post->ID, 'Size', true );
 
-			if ($counter % 3 == 0) {
-				$class = " Work-item--small";
-			}
-
-			if ($counter % 2 == 0) {
-				$class = " Work-item--medium";
-			}
-
+				if ( $thumb_size == "small" || "medium"  ) {
+					$class = " Work-item--" . $thumb_size;
+				} else {
+					$class = " ";
+				}
 		?>
 		<li class="Work-item<?php echo "$class" ?>">
+
 			<div class="Work-itemInner">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<?php

@@ -7,7 +7,7 @@
 		<div class="Project-client">
 			<?php
 				$client = get_post_meta( $post->ID, 'Client', true );
-				echo "Client: " . $client;
+				echo "<span>Client:</span> " . $client;
 			?>
 		</div>
 		<h1 class="Project-title">
